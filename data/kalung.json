@@ -1,0 +1,507 @@
+{
+    "menu": [{
+            "kategori": "cewek",
+            "nama": "Kalung Alena Reza",
+            "deskripsi": "https://go.imvu.com/shop/product-48394470/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48394470?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Alena",
+            "deskripsi": "https://go.imvu.com/shop/product-48363645/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48363645?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Felly Vero",
+            "deskripsi": "https://go.imvu.com/shop/product-48327472/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48327472?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Nana Angel",
+            "deskripsi": "https://go.imvu.com/shop/product-48281452/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48281452?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Couple Revina",
+            "deskripsi": "https://go.imvu.com/shop/product-48265116/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48265116?height=150&width=150g"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Fitri Onces F",
+            "deskripsi": "https://go.imvu.com/shop/product-48193751/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48193751?height=150&width=150g"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Ayy",
+            "deskripsi": "https://go.imvu.com/shop/product-48127418/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48127418?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Rena Alex (F)",
+            "deskripsi": "https://go.imvu.com/shop/product-48098128/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48098128?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Mawar Aditya",
+            "deskripsi": "https://go.imvu.com/shop/product-47887674/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47887674?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Couple Anggun",
+            "deskripsi": "https://go.imvu.com/shop/product-47830322/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47830322?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung RenaRen",
+            "deskripsi": "https://go.imvu.com/shop/product-47677267/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47677267?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Chao 02",
+            "deskripsi": "https://go.imvu.com/shop/product-47617053/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47617053?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Chao 01",
+            "deskripsi": "https://go.imvu.com/shop/product-47616868/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47616868?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Moy",
+            "deskripsi": "https://go.imvu.com/shop/product-47602293/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47602293?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Vanka",
+            "deskripsi": "https://go.imvu.com/shop/product-47561916/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47561916?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Couple ThaaSaef",
+            "deskripsi": "https://go.imvu.com/shop/product-47549423/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47549423?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Azalea Onces",
+            "deskripsi": "https://go.imvu.com/shop/product-47542228/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47542228?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Rena Sparkle",
+            "deskripsi": "https://go.imvu.com/shop/product-47528748/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47528748?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung R Sparkle",
+            "deskripsi": "https://go.imvu.com/shop/product-47516961/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47516961?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Ree",
+            "deskripsi": "https://go.imvu.com/shop/product-47477877/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47477877?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Ree AXL",
+            "deskripsi": "https://go.imvu.com/shop/product-47477721/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47477721?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Gadis",
+            "deskripsi": "https://go.imvu.com/shop/product-47466621/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47466621?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Larast",
+            "deskripsi": "https://go.imvu.com/shop/product-47409920/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47409920?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Kaa",
+            "deskripsi": "https://go.imvu.com/shop/product-47400261/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47400261?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung QiQi",
+            "deskripsi": "https://go.imvu.com/shop/product-47347599/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47347599?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung DIan F",
+            "deskripsi": "https://go.imvu.com/shop/product-47049404/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47049404?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Nia",
+            "deskripsi": "https://go.imvu.com/shop/product-47041441/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47041441?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Cindy",
+            "deskripsi": "https://go.imvu.com/shop/product-47005517/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47005517?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Ria Love Bitch F",
+            "deskripsi": "https://go.imvu.com/shop/product-46847696/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-46847696?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Chen",
+            "deskripsi": "https://go.imvu.com/shop/product-46919864/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-46919864?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Nindy",
+            "deskripsi": "https://go.imvu.com/shop/product-46919854/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-46919854?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Foxhly",
+            "deskripsi": "https://go.imvu.com/shop/product-50168744/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-50168744?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Rena Win (F)",
+            "deskripsi": "https://go.imvu.com/shop/product-49934130/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49934130?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Fox_Lhy",
+            "deskripsi": "https://go.imvu.com/shop/product-49889607/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49889607?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Yaya",
+            "deskripsi": "https://go.imvu.com/shop/product-49711462/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49711462?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung DeqKiim 💋",
+            "deskripsi": "https://go.imvu.com/shop/product-49711453/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49711453?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Zahra",
+            "deskripsi": "https://go.imvu.com/shop/product-49651694/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49651694?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Shinta",
+            "deskripsi": "https://go.imvu.com/shop/product-49550201/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49550201?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Muttia",
+            "deskripsi": "https://go.imvu.com/shop/product-49512508/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49512508?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Vhira",
+            "deskripsi": "https://go.imvu.com/shop/product-49512478/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49512478?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung WULAN & 3ARY (F",
+            "deskripsi": "https://go.imvu.com/shop/product-49440013/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49440013?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Mawar Yani",
+            "deskripsi": "https://go.imvu.com/shop/product-49394665/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49394665?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Azea Reza (F)",
+            "deskripsi": "https://go.imvu.com/shop/product-49391500/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49391500?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Elyn Albeja (F)",
+            "deskripsi": "https://go.imvu.com/shop/product-49274986/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49274986?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Eka Key",
+            "deskripsi": "https://go.imvu.com/shop/product-49094416/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49094416?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Erika Didik",
+            "deskripsi": "https://go.imvu.com/shop/product-49083440/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49083440?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Lina Rey (F)",
+            "deskripsi": "https://go.imvu.com/shop/product-48829576/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48829576?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Kalung Ayla Regar",
+            "deskripsi": "https://go.imvu.com/shop/product-48802886/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48802886?height=150&width=150"
+        },
+        {
+            "kategori": "cewek",
+            "nama": "Req Kalung Evaa",
+            "deskripsi": "https://go.imvu.com/shop/product-48735929/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48735929?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung IKKI (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-50168923/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-50168923?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Win Rena (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-49934142/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49934142?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Suman Zahra (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-49918395/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49918395?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Suman",
+            "deskripsi": "https://go.imvu.com/shop/product-49875911/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49875911?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Aditya93",
+            "deskripsi": "https://go.imvu.com/shop/product-49776954/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49776954?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung 3ARY & WULAN (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-49440018/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49440018?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Reza Azea (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-49391707/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49391707?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Albeja Elyn",
+            "deskripsi": "https://go.imvu.com/shop/product-49275058/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-49275058?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Rey Lina (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-48829626/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48829626?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Regar Ayla (M)",
+            "deskripsi": "https://go.imvu.com/shop/product-48802849/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48802849?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Couple Hendri",
+            "deskripsi": "https://go.imvu.com/shop/product-48265125/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48265125?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Onces Fitri M",
+            "deskripsi": "https://go.imvu.com/shop/product-48193768/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48193768?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Alex Rena",
+            "deskripsi": "https://go.imvu.com/shop/product-48098194/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-48098194?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Adit Mawar",
+            "deskripsi": "https://go.imvu.com/shop/product-47887550/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47887550?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Couple Ricardo",
+            "deskripsi": "https://go.imvu.com/shop/product-47830317/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47830317?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung D1M",
+            "deskripsi": "https://go.imvu.com/shop/product-47769621/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47769621?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung DJ CANDI",
+            "deskripsi": "https://go.imvu.com/shop/product-47768981/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47768981?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Saef A7X",
+            "deskripsi": "https://go.imvu.com/shop/product-47549375/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47549375?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Azalea Onces M",
+            "deskripsi": "https://go.imvu.com/shop/product-47542185/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47542185?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Axl Ree Couple",
+            "deskripsi": "https://go.imvu.com/shop/product-47477736/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47477736?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung B.S",
+            "deskripsi": "https://go.imvu.com/shop/product-47325225/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-47325225?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung ACE",
+            "deskripsi": "https://go.imvu.com/shop/product-46923050/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-46923050?height=150&width=150"
+        },
+        {
+            "kategori": "cowok",
+            "nama": "Kalung Bitch Love Ria M",
+            "deskripsi": "https://go.imvu.com/shop/product-46847676/",
+            "harga": 25000,
+            "gambar": "https://api.imvu.com/rendered_image/product-46847676?height=150&width=150"
+        }
+    ]
+}
