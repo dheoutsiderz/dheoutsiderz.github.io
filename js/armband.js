@@ -1,6 +1,6 @@
 function tampilkanSemuaMenu() {
     $('#daftar-menu').html('');
-    $.getJSON('../data/armband.json', function(data) {
+    $.getJSON('data/armband.json', function(data) {
         let menu = data.menu;
         $.each(menu, function(i, data) {
             $('#daftar-menu').append(
@@ -32,7 +32,7 @@ $('.nav-link').on('click', function() {
         return;
     }
 
-    $.getJSON('../data/armband.json', function(data) {
+    $.getJSON('data/armband.json', function(data) {
         let menu = data.menu;
         let content = '';
 
