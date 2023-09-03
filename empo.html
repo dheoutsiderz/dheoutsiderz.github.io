@@ -336,21 +336,65 @@
 <textarea id="outputText" rows="2" cols="30" placeholder="Setelah klik tombol COPY
 Cek Dulu Disini Nick Yang Sudah Dibuat"></textarea>
 
+<div class="ui-grid-a" style="margin-top: 10px;">
+<div class="ui-block-a" style="width:20%;">
+<center><span id="word">0</span></center>
+</div>
+<div class="ui-block-b" style="width:30%;">
+<center>Word</center>
+</div>
+<div class="ui-block-c" style="width:20%;">
+<center><span id="char">0</span></center>
+</div>
+<div class="ui-block-d" style="width:30%;">
+Character
+</div>
+</div>
+
 </form>
 </div>
 </div>
 
 
 <script type="text/javascript">
+//script count 
+		let outputText = document.getElementById('outputText');
+		let char = document.getElementById('char');
+		let word = document.getElementById('word');
+
+		outputText.addEventListener('input', function () {
+			// count characters
+			let content = this.value;
+			char.textContent = content.length;
+
+			// remove empty spaces from start and end
+			content.trim();
+			console.log(content);
+
+			let wordList = content.split(/\s/);
+
+			// Remove spaces from between words
+			let words = wordList.filter(function (element) {
+				return element != "";
+			});
+
+			// count words
+			word.textContent = words.length;
+		});
+
+
+
+//script input output
   var input = document.getElementById("inputText");
   var textarea = document.getElementById("outputText");
   function update(){
     textarea.value = input.value.split("").sort().join("")
   }
   
+//script maxlength
   if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-</script>
-<script>
+
+//script input emporium
 function myFunction() {
   var x = document.getElementById("myText").value;
  document.getElementById("acv").value = x;
@@ -359,9 +403,8 @@ function myFunction() {
  document.getElementById("hnv").value = x;
  document.getElementById("cv").value = x;
 }
-</script>
 
-<script>
+//script reset emporium
 function hapusbro() {
   document.getElementById("acvForm").reset();
   document.getElementById("hovForm").reset();
@@ -370,11 +413,9 @@ function hapusbro() {
   document.getElementById("cvForm").reset();
   document.getElementById("myText").reset();
 }
-</script>
 
 
-<script>
-// Select on pressing COPY
+// Script form data-copy (input type number)
 var copybutton = document.querySelectorAll("[data-copy]");
 for (var i = 0; i < copybutton.length; i++) {
   var el = copybutton[i];
@@ -385,6 +426,7 @@ for (var i = 0; i < copybutton.length; i++) {
   });
 }
 
+// Script form data-copy (input type text)
 var copybutton = document.querySelectorAll("[data-copy]");
 for (var i = 0; i < copybutton.length; i++) {
   var el = copybutton[i];
@@ -395,7 +437,7 @@ for (var i = 0; i < copybutton.length; i++) {
   });
 }
 
-// Select all text when pressing inside text field
+// Script Select All
 var els_selectAll = document.querySelectorAll("[data-click-select-all]");
 for (var i = 0; i < els_selectAll.length; i++) {
   var el = els_selectAll[i];
