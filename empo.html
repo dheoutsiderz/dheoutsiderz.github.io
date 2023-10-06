@@ -1,14 +1,8 @@
-
 <html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emporium</title>
 <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet"  href="css/classic.css">
-<link rel="stylesheet" href="js/grid-listview.css">
-<link rel="stylesheet" href="css/mycss02.css">
-<script src="js/myjs.js"></script>
-<script src="js/clipboard.min.js"></script>	
-<script src="js/jscolor.js"></script>	
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head><body>
@@ -33,15 +27,19 @@
 <div class="ui-block-a" style="width:100%;">
 <input type="text" id="myText" value="" placeholder="Masukan ID" oninput="myFunction()" data-clear-btn="true">
 </div>
-<div class="ui-block-a" style="width:100%;margin-top: -5px;">
+<div class="ui-block-a" style="width:50%;margin-top: -5px;">
 <input type="button" value="RESET" onclick="hapusbro()">
 </div>
+<div class="ui-block-b" style="width:50%;margin-top: -5px;">
+<input type="submit" value="SUBMIT" onclick="myFunction()">
+</div>
+
 </div>
 
 <div class="ui-grid-a" style="margin-top: -5px;">
 <form id="acvForm" name="input" action="https://find.vu/services/acv/index.php" target="output_frame" method="POST">  
 <div class="ui-block-a" style="width:75%;">
-<input type="text" id="acv" name="avatar_search" value="" placeholder="Avatar Card" readonly="readonly" disabled="disabled">
+<input type="text" id="acv" name="avatar_search" value="" placeholder="Avatar Card" readonly="readonly">
 </div>
 <div class="ui-block-b" style="width:25%;margin-top: -5px;">
 <input type="submit" id="acv" value="ACV">
@@ -52,7 +50,7 @@
 <div class="ui-grid-a" style="margin-top: -5px;">
 <form id="hovForm" name="input" action="https://find.vu/services/hov/index.php" target="output_frame" method="POST">    
 <div class="ui-block-a" style="width:75%;">
-<input type="text" id="hov" name="avatar_search" value="" placeholder="Hidden Outfit" readonly="readonly" disabled="disabled">
+<input type="text" id="hov" name="avatar_search" value="" placeholder="Hidden Outfit" readonly="readonly">
 </div>
 <div class="ui-block-b" style="width:25%;margin-top: -5px;">
 <input type="submit" value="HOV">
@@ -66,7 +64,7 @@
 <input type="text" id="hrv" name="avatar_search" value="" placeholder="Historical Room" readonly="readonly" disabled="disabled">
 </div>
 <div class="ui-block-b" style="width:25%;margin-top: -5px;">
-<input type="submit" value="HRV">
+<input type="submit" value="HRV" disabled="disabled">
 </div>
 </form>
 </div>
@@ -74,7 +72,7 @@
 <div class="ui-grid-a" style="margin-top: -5px;">
 <form id="hnvForm" name="input" action="https://find.vu/services/hnv/index.php" target="output_frame" method="POST">    
 <div class="ui-block-a" style="width:75%;">
-<input type="text" id="hnv" name="avatar_search" value="" placeholder="Historical Name" readonly="readonly" disabled="disabled">
+<input type="text" id="hnv" name="avatar_search" value="" placeholder="Historical Name" readonly="readonly">
 </div>
 <div class="ui-block-b" style="width:25%;margin-top: -5px;">
 <input type="submit" value="HNV">
@@ -85,7 +83,7 @@
 <div class="ui-grid-a" style="margin-top: -5px;">
 <form id="cvForm" name="input" action="https://find.vu/services/cv/index.php" target="output_frame" method="POST">    
 <div class="ui-block-a" style="width:75%;">
- <input type="text" id="cv" name="developer" value="" placeholder="Catalog Product" readonly="readonly" disabled="disabled">
+ <input type="text" id="cv" name="developer" value="" placeholder="Catalog Product" readonly="readonly">
 </div>
 <div class="ui-block-b" style="width:25%;margin-top: -5px;">
 <input type="submit" value="CV">
@@ -96,7 +94,7 @@
 
 
 <div id="outputempo" class="ui-body-a ui-content">
-<iframe name="output_frame" src="" id="output_frame" style="width:390px;height:580px;position:relative;margin-top: -10px;margin-left: -10px;">
+<iframe name="output_frame" src="" id="output_frame" style="width:424px;height:885px;position:relative;margin-top: -295px;margin-left: -38px; margin-bottom: -30px;">
 </iframe>
 
 </div>
@@ -119,15 +117,34 @@
 </div>
 
  <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek ID Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('product').value);" />
- 
 </form>
-</div>
+
 
 
 <!--        ---CEK PROFILE---     -->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<form id="avForm" name="input" method="post">
 <input type="text" id="av" placeholder="Masukan ID" data-clear-btn="true"/>
- <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Profile" onClick="javascript: window.open('https://go.imvu.com/av/' + document.getElementById('av').value);" />
 </div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Profile" onClick="javascript: window.open('https://go.imvu.com/av/' + document.getElementById('av').value);" />
+ </form>
+</div>
+</div>
+
+<!-- CEK OUTFIT -->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" id="ceksavelook" placeholder="Masukan ID" data-clear-btn="true"/>
+</div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Outfit" onClick="javascript: window.open('https://www.imvu.com/outfits/index.php?just_this_user=' + document.getElementById('ceksavelook').value);" />
+</div>
+</div>
+
+</div></div>
+
 
 
 <!-- NICK GENERATOR -->
@@ -404,6 +421,7 @@ function myFunction() {
  document.getElementById("hrv").value = x;
  document.getElementById("hnv").value = x;
  document.getElementById("cv").value = x;
+ document.getElementById("av").value = x;
 }
 
 //script reset emporium
@@ -413,7 +431,7 @@ function hapusbro() {
   document.getElementById("hrvForm").reset();
   document.getElementById("hnvForm").reset();
   document.getElementById("cvForm").reset();
-  document.getElementById("myText").reset();
+  document.getElementById("avForm").reset();
 }
 
 
