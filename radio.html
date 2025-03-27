@@ -1,0 +1,697 @@
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emporium</title>
+<link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet"  href="css/classic.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head><body>
+  
+<!-- MY HEADER -->
+<div data-role="page" data-theme="a">
+ <div data-role="header" data-theme="a">
+ <a href="#" data-rel='back' data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" rel="external">Back</a>
+ <h1>IMVU MOD</h1>
+ </div>
+ 
+<!-- TABS AWAL -->
+ <div data-role="tabs" id="tabs"><div data-role="navbar"><ul>
+<li><a href="#cekproduk" data-ajax="false">Cek Profile</a></li>
+<li><a href="#roomlist" data-ajax="false">Chatroom</a></li>
+<li><a href="#radio" data-ajax="false">ZENO FM</a></li>
+<li><a href="#nickgen" data-ajax="false">NickGen</a></li>
+</ul></div>
+
+<!-- CEK PRODUCT & CEK PROFILE -->
+<div id="cekproduk" class="ui-body-a ui-content">
+<!--
+<input type="number" id="product" placeholder="Masukan ID" data-clear-btn="true" maxlength="8"/>
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek ID Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('product').value);" />
+-->
+<!-----INPUT ID USER----->
+<div class="ui-grid-a" style="margin-top: -10px;">
+<div class="ui-block-a" style="width:100%;">
+<input type="text" id="myText" value="" placeholder="Masukan ID" oninput="myFunction()" data-clear-btn="true">
+</div>
+
+<div class="ui-block-a" style="width:50%;margin-top: -5px;">
+<input type="button" value="RESET" onclick="hapusbro()">
+</div>
+<div class="ui-block-b" style="width:50%;margin-top: -5px;">
+<input type="submit" value="SUBMIT" onclick="myFunction()">
+</div>
+</div>
+
+
+<!-- <div class="ui-grid-a" style="margin-top: -5px;">
+<form data-copy="true">
+<div class="ui-block-a" style="width:75%;">
+<input type="text" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" id="IDProduct" value="" placeholder="Masukan ID" data-clear-btn="true">
+</div>
+<div class="ui-block-b" style="width:25%;margin-top: -5px;">
+<input type="submit" id="btn" value="Copy" onclick="copasIDP()">
+</div>
+
+ <input type="submit" class="btn btn-outline-secondary" id="btn" value="Cek ID Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('IDProduct').value);" />
+</form> -->
+
+<!---CEK PROFILE----->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<form id="avForm" name="input" method="post">
+<input type="text" id="av" placeholder="Masukan ID" data-clear-btn="true"/>
+</div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Profile" onClick="javascript: window.open('https://go.imvu.com/av/' + document.getElementById('av').value);" />
+ </form>
+</div>
+</div>
+
+
+<!-- CEK PRODUCT VIA URL GO.IMVU.COM  -->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<form id="cpForm" name="input" method="post">
+<input type="text" id="cp" oninput="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Masukan URL" data-clear-btn="true"/>
+</div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('cp').value);" />
+ </form>
+ <script>
+  document.getElementById("cp").addEventListener("keyup", function() { this.value = this.value.replace(/[^0-9]/g, ""); });
+</script>
+</div>
+</div>
+
+
+
+
+<!-- CEK SAVELOCK PAKE ID-->
+<!-- <div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" id="ceksavelook" placeholder="Masukan ID" data-clear-btn="true"/>
+</div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+ <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Outfit" onClick="javascript: window.open('https://www.imvu.com/outfits/index.php?just_this_user=' + document.getElementById('ceksavelook').value);" />
+</div>
+</div> -->
+
+
+<!-- COPAS ID PRODUCT BY URL -->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:60%;">
+<input type="text" id="inputIDP" oninput="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Masukan URL" data-clear-btn="true">
+</div>
+<div class="ui-block-b" style="width:40%;margin-top: -5px;">
+<input type="submit" id="btn" value="Copy ID" onclick="copasInputIDP()">
+</div>
+</div>
+<script>
+  document.getElementById("inputIDP").addEventListener("keyup", function() { this.value = this.value.replace(/[^0-9]/g, ""); });
+</script>
+
+</div>
+
+
+<!-- ROOMLIST --> 
+<div id="roomlist" class="ui-body-a ui-content">
+<div class="ui-block-a" style="width:100%;margin-top: -20px;">
+<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Room..." data-inset="true" style="margin-top: -10px;">
+    <li><a href="https://go.imvu.com/chat/favorite/">Favorite Room</a></li>  
+     <li><a href="https://go.imvu.com/chat/recent/">Recent Room</a></li>
+    <li><a href="https://go.imvu.com/chat/chat_rooms/">ChatRoom</a></li>  
+     
+    <li><a href="https://go.imvu.com/chat/room-272203407-41">Romance daixy🦋</a></li>    
+    <li><a href="https://go.imvu.com/chat/room-253636107-121">Pulau Putri</a></li>
+    <li><a href="https://go.imvu.com/chat/room-354362699-64">Nongskuy</a></li>
+    <li><a href="https://go.imvu.com/chat/room-240280372-91">Lost</a></li>
+    <li><a href="https://go.imvu.com/chat/room-74020741-173">Atap Jomblo</a></li>
+    <li><a href="https://go.imvu.com/chat/room-105746345-366">Jambak</a></li>
+    <li><a href="https://go.imvu.com/chat/room-116355210-33">Jadian Yuk</a></li>
+    <li><a href="https://go.imvu.com/chat/room-116338450-70">Galau</a></li>
+    <li><a href="https://go.imvu.com/chat/room-127382922-75">Singgah</a></li>
+    <li><a href="https://go.imvu.com/chat/room-134034627-47">Tepi</a></li>
+    <li><a href="https://go.imvu.com/chat/room-104869264-28">Kesendirian</a></li>    
+    <li><a href="https://go.imvu.com/chat/room-231778717-55">GWS Jomblo</a></li>    
+    <li><a href="https://go.imvu.com/chat/room-110498183-167">Diatas Normal</a></li>
+    <li><a href="https://go.imvu.com/chat/room-271497171-24">Nongki</a></li>
+    <li><a href="https://go.imvu.com/chat/room-271497171-24">Nongki</a></li>
+    
+    
+</ul>
+</div>
+</div>
+
+<!-- LINK RADIO STREAMING -->
+<div id="radio" class="ui-body-a ui-content">
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-153.zeno.fm/vwhplynnpfjtv" id="radio1");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="dangdut2" onclick="copasRadio1()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-153.zeno.fm/xg7mcgf1bf9uv" id="radio2");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Golden Memories" onclick="copasRadio2()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-156.zeno.fm/kfp2ghnat18uv" id="radio3");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Geboy dangdut" onclick="copasRadio3()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-155.zeno.fm/av6xzace6ehvv" id="radio4");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Radio Music Indonesia" onclick="copasRadio4()">
+</div>
+</div>
+
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-157.zeno.fm/954yxsx00ehvv" id="radio5");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Radio online Tulungagung" onclick="copasRadio5()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-157.zeno.fm/1ph0e5nnmkhvv" id="radio6");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="RADIO ANGLING DARMA FM TULUNGAGUNG" onclick="copasRadio6()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-157.zeno.fm/iwcyhq56nwiuv" id="radio7");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ BARU" onclick="copasRadio7()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-154.zeno.fm/z1bs88ttrfhvv" id="radio8");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Radio MADU Trenggalek (MDS)" onclick="copasRadio8()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-159.zeno.fm/ge2ekgd7f18uv" id="radio9");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Radio Kajian Islam" onclick="copasRadio9()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-154.zeno.fm/ti7cqx6fxb8vv" id="radio10");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="90s Rock" onclick="copasRadio10()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-158.zeno.fm/kt0ud2kkb8zuv" id="radio11");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Radio One FM Garut" onclick="copasRadio11()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://stream-171.zeno.fm/qjhtv8asmn8tv" id="radio12");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ VIRAL" onclick="copasRadio12()">
+</div>
+</div>
+
+<script>
+  function copasRadio1() {
+  var copyText = document.getElementById("radio1");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+  
+  function copasRadio2() {
+  var copyText = document.getElementById("radio2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio3() {
+  var copyText = document.getElementById("radio3");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio4() {
+  var copyText = document.getElementById("radio4");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio5() {
+  var copyText = document.getElementById("radio5");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio6() {
+  var copyText = document.getElementById("radio6");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio7() {
+  var copyText = document.getElementById("radio7");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio8() {
+  var copyText = document.getElementById("radio8");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio9() {
+  var copyText = document.getElementById("radio9");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio10() {
+  var copyText = document.getElementById("radio10");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio11() {
+  var copyText = document.getElementById("radio11");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasRadio12() {
+  var copyText = document.getElementById("radio12");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+</script>
+</div>
+
+
+
+<!-- NICK GENERATOR -->
+<div id="nickgen" class="ui-body-a ui-content">
+<div class="ui-grid-a" style="margin-top: -20px;">
+<form name="nick" data-copy="true">  
+<div class="ui-block-a" style="width:100%;">
+<input type="text" id="inputText" oninput="update()" wrap="on" maxlength = "100" name="input" data-clear-btn="true" style="height:50px; font-size:14pt;">
+</div>
+<div class="ui-block-a" style="width:50%;margin-top:-10px;">
+<input type="submit" id="btn" value="Copy" OnClick="copasnickgenz()">
+</div>
+<div class="ui-block-b" style="width:50%;margin-top:-10px;">
+<INPUT TYPE="button" NAME="backspace" VALUE='Backspace' OnClick="nick.input.value =  nick.input.value.substring(0,nick.input.value.length*1 -1)">
+</div>
+</div>
+
+<!-- BARIS PERTAMA -->
+<div class="ui-grid-a" style="margin-top: -10px;">
+<div class="ui-block-a" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ͣ" OnClick="nick.input.value += 'ͣ'">
+</div>  
+<div class="ui-block-b" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷧ" OnClick="nick.input.value += 'ᷧ'">
+</div>
+<div class="ui-block-c" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷲ" OnClick="nick.input.value += 'ᷲ'">
+</div>
+<div class="ui-block-d" style="width:11%;">
+<INPUT TYPE="button" NAME="eight" VALUE="ⷡ" OnClick="nick.input.value += 'ⷡ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷨ" OnClick="nick.input.value += 'ᷨ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷩ" OnClick="nick.input.value += 'ᷩ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="nine" VALUE="ⷭ" OnClick="nick.input.value += 'ⷭ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ͩ" OnClick="nick.input.value += 'ͩ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷘ" OnClick="nick.input.value += 'ᷘ'">
+</div>
+</div>
+
+<!-- BARIS KEDUA -->
+<div class="ui-grid-a" style="margin-top: -10px;">
+<div class="ui-block-a" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷷ" OnClick="nick.input.value += 'ⷷ'">
+</div>
+<div class="ui-block-b" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷪ" OnClick="nick.input.value += 'ᷪ'">
+</div>
+<div class="ui-block-c" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷫ" OnClick="nick.input.value += 'ᷫ'">
+</div>
+<div class="ui-block-d" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷚ" OnClick="nick.input.value += 'ᷚ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷩ" OnClick="nick.input.value += 'ⷩ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ͥ" OnClick="nick.input.value += 'ͥ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷯ" OnClick="nick.input.value += 'ᷯ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷦ" OnClick="nick.input.value += 'ⷦ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷞ" OnClick="nick.input.value += 'ᷞ'">
+</div>
+</div>
+
+<!-- BARIS KETIGA -->
+<div class="ui-grid-a" style="margin-top: -10px;">
+<div class="ui-block-a" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷨ" OnClick="nick.input.value += 'ⷨ'">
+</div>
+<div class="ui-block-b" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷠ" OnClick="nick.input.value += 'ᷠ'">
+</div>
+<div class="ui-block-c" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷪ" OnClick="nick.input.value += 'ⷪ'">
+</div>
+<div class="ui-block-d" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷳ" OnClick="nick.input.value += 'ᷳ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷬ" OnClick="nick.input.value += 'ⷬ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷭ" OnClick="nick.input.value += 'ᷭ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷢ" OnClick="nick.input.value += 'ᷢ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷤ" OnClick="nick.input.value += 'ᷤ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷮ" OnClick="nick.input.value += 'ⷮ'">
+</div>
+</div>
+
+<!-- BARIS KEEMPAT -->
+<div class="ui-grid-a" style="margin-top: -10px;">
+  <div class="ui-block-a" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ͧ" OnClick="nick.input.value += 'ͧ'">
+</div>
+<div class="ui-block-b" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷴ" OnClick="nick.input.value += 'ᷴ'">
+</div>
+<div class="ui-block-c" style="width:11%;">
+<INPUT TYPE="button" NAME="seven" VALUE="ᷰ" OnClick="nick.input.value += 'ᷰ'">
+</div>
+<div class="ui-block-d" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ͮ" OnClick="nick.input.value += 'ͮ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷲ" OnClick="nick.input.value += 'ⷲ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ͯ" OnClick="nick.input.value += 'ͯ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ⷱ" OnClick="nick.input.value += 'ⷱ'">
+</div>
+<div class="ui-block-e" style="width:11%;">
+<INPUT TYPE="button" NAME="div" VALUE="ᷦ" OnClick="nick.input.value += 'ᷦ'">
+</div>
+</div>
+<hr>
+<!-- BARIS KELIMA -->
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃐" OnClick="nick.input.value += '⃐'">
+</div>
+<div class="ui-block-b" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃑" OnClick="nick.input.value += '⃑'">
+</div>
+<div class="ui-block-c" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃔" OnClick="nick.input.value += '⃔'">
+</div>
+<div class="ui-block-d" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃕" OnClick="nick.input.value += '⃕'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃖" OnClick="nick.input.value += '⃖'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃗" OnClick="nick.input.value += '⃗'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃛" OnClick="nick.input.value += '⃛'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃜" OnClick="nick.input.value += '⃜'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃡" OnClick="nick.input.value += '⃡'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃢" OnClick="nick.input.value += '⃢'">
+</div>
+</div>
+
+<!-- BARIS KEENAM -->
+<div class="ui-grid-a" style="margin-top: -10px;">
+<div class="ui-block-a" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃭" OnClick="nick.input.value += '⃭'">
+</div>
+<div class="ui-block-b" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃭" OnClick="nick.input.value += '⃭'">
+</div>
+<div class="ui-block-c" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃮" OnClick="nick.input.value += '⃮'">
+</div>
+<div class="ui-block-d" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃯" OnClick="nick.input.value += '⃯'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃨" OnClick="nick.input.value += '⃨'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃝" OnClick="nick.input.value += '⃝'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃞" OnClick="nick.input.value += '⃞'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃟" OnClick="nick.input.value += '⃟'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃠" OnClick="nick.input.value += '⃠'">
+</div>
+<div class="ui-block-e" style="width:10%;">
+<INPUT TYPE="button" NAME="seven" VALUE=" ⃤" OnClick="nick.input.value += '⃤'">
+</div>
+</div>
+
+
+
+<textarea id="outputText" rows="2" cols="30" placeholder="Setelah klik tombol COPY
+Cek Dulu Disini Nick Yang Sudah Dibuat"></textarea>
+
+<div class="ui-grid-a" style="margin-top: 10px;">
+<div class="ui-block-a" style="width:20%;">
+<center><span id="word">0</span></center>
+</div>
+<div class="ui-block-b" style="width:30%;">
+<center>Word</center>
+</div>
+<div class="ui-block-c" style="width:20%;">
+<center><span id="char">0</span></center>
+</div>
+<div class="ui-block-d" style="width:30%;">
+Character
+</div>
+</div>
+
+</form>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+//script count 
+		let outputText = document.getElementById('outputText');
+		let char = document.getElementById('char');
+		let word = document.getElementById('word');
+
+		outputText.addEventListener('input', function () {
+			// count characters
+			let content = this.value;
+			char.textContent = content.length;
+
+			// remove empty spaces from start and end
+			content.trim();
+			console.log(content);
+
+			let wordList = content.split(/\s/);
+
+			// Remove spaces from between words
+			let words = wordList.filter(function (element) {
+				return element != "";
+			});
+
+			// count words
+			word.textContent = words.length;
+		});
+
+
+
+//script input output
+  var input = document.getElementById("inputText");
+  var textarea = document.getElementById("outputText");
+  function update(){
+    textarea.value = input.value.split("").sort().join("")
+  }
+  
+//script maxlength
+  if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+
+//script input emporium
+function myFunction() {
+  var x = document.getElementById("myText").value;
+ 
+ document.getElementById("av").value = x;
+}
+
+//script reset emporium
+function hapusbro() {
+  document.getElementById("avForm").reset();
+}
+
+function copasIDP() {
+  var copyText = document.getElementById("IDProduct");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);  navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+function copasInputIDP() {
+  var copyText = document.getElementById("inputIDP");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);  navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+
+function copasnickgenz() {
+  var copyText = document.getElementById("inputText");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);  navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("NickName: " + copyText.value);
+}
+
+
+// Script form data-copy (input type number)
+var copybutton = document.querySelectorAll("[data-copy]");
+for (var i = 0; i < copybutton.length; i++) {
+  var el = copybutton[i];
+  el.addEventListener("submit", function(e) {
+    e.preventDefault();
+    var text = e.target.querySelector('input[type="number"]').select();
+    document.execCommand("copy");
+  });
+}
+
+
+// Script form data-copy (input type text)
+var copybutton = document.querySelectorAll("[data-copy]");
+for (var i = 0; i < copybutton.length; i++) {
+  var el = copybutton[i];
+  el.addEventListener("submit", function(e) {
+    e.preventDefault();
+    var text = e.target.querySelector('input[type="text"]').select();
+    document.execCommand("copy");
+  });
+}
+
+// Script Select All
+var els_selectAll = document.querySelectorAll("[data-click-select-all]");
+for (var i = 0; i < els_selectAll.length; i++) {
+  var el = els_selectAll[i];
+  el.addEventListener("click", function(e) {
+    e.target.select();
+  });
+}
+
+</script>
+<script src="js/footer.js"></script>
+</body></html>
