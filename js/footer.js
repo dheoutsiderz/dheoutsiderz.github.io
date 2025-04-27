@@ -1,0 +1,1 @@
+document.write(unescape('%3Cdiv%20data-role%3D%22footer%22%20data-position%3D%22fixed%22%20data-theme%3D%22a%22%3E%3Ch1%3ECreated%20By%20%u0110h%EB%F8ut%u015Fi%u0111%u0113r%3C/h1%3E%3C/div%3E'));
