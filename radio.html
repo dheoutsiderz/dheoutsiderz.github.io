@@ -1,6 +1,6 @@
 <html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emporium</title>
+<title>LINK MUSIK IMVU</title>
 <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet"  href="css/classic.css">
 <script src="js/jquery.js"></script>
@@ -11,140 +11,654 @@
 <div data-role="page" data-theme="a">
  <div data-role="header" data-theme="a">
  <a href="#" data-rel='back' data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-iconshadow="false" rel="external">Back</a>
- <h1>IMVU MOD</h1>
+ <h1>LINK MUSIK</h1>
  </div>
  
 <!-- TABS AWAL -->
  <div data-role="tabs" id="tabs"><div data-role="navbar"><ul>
-<li><a href="#cekproduk" data-ajax="false">Cek Profile</a></li>
-<li><a href="#roomlist" data-ajax="false">Chatroom</a></li>
+<li><a href="#musik1" data-ajax="false">Musik 01</a></li>
+<li><a href="#musik2" data-ajax="false">Musik 02</a></li>
+<li><a href="#musik3" data-ajax="false">Musik 03</a></li>
 <li><a href="#radio" data-ajax="false">ZENO FM</a></li>
-<li><a href="#nickgen" data-ajax="false">NickGen</a></li>
+
 </ul></div>
 
 <!-- CEK PRODUCT & CEK PROFILE -->
-<div id="cekproduk" class="ui-body-a ui-content">
-<!--
-<input type="number" id="product" placeholder="Masukan ID" data-clear-btn="true" maxlength="8"/>
- <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek ID Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('product').value);" />
--->
-<!-----INPUT ID USER----->
-<div class="ui-grid-a" style="margin-top: -10px;">
-<div class="ui-block-a" style="width:100%;">
-<input type="text" id="myText" value="" placeholder="Masukan ID" oninput="myFunction()" data-clear-btn="true">
+<div id="musik1" class="ui-body-a ui-content">
+<div class="ui-grid-a" style="margin-top: -15px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://g.top4top.io/m_33999apcg1.mp3" id="musikA1");">
 </div>
-
-<div class="ui-block-a" style="width:50%;margin-top: -5px;">
-<input type="button" value="RESET" onclick="hapusbro()">
-</div>
-<div class="ui-block-b" style="width:50%;margin-top: -5px;">
-<input type="submit" value="SUBMIT" onclick="myFunction()">
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Timur" onclick="copasmusikA1()">
 </div>
 </div>
 
-
-<!-- <div class="ui-grid-a" style="margin-top: -5px;">
-<form data-copy="true">
-<div class="ui-block-a" style="width:75%;">
-<input type="text" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" id="IDProduct" value="" placeholder="Masukan ID" data-clear-btn="true">
-</div>
-<div class="ui-block-b" style="width:25%;margin-top: -5px;">
-<input type="submit" id="btn" value="Copy" onclick="copasIDP()">
-</div>
-
- <input type="submit" class="btn btn-outline-secondary" id="btn" value="Cek ID Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('IDProduct').value);" />
-</form> -->
-
-<!---CEK PROFILE----->
 <div class="ui-grid-a" style="margin-top: -5px;">
-<div class="ui-block-a" style="width:60%;">
-<form id="avForm" name="input" method="post">
-<input type="text" id="av" placeholder="Masukan ID" data-clear-btn="true"/>
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://l.top4top.io/m_3399jznc41.mp3" id="musikA2");">
 </div>
-<div class="ui-block-b" style="width:40%;margin-top: -5px;">
- <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Profile" onClick="javascript: window.open('https://go.imvu.com/av/' + document.getElementById('av').value);" />
- </form>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Galau 01" onclick="copasmusikA2()">
 </div>
 </div>
 
-
-<!-- CEK PRODUCT VIA URL GO.IMVU.COM  -->
 <div class="ui-grid-a" style="margin-top: -5px;">
-<div class="ui-block-a" style="width:60%;">
-<form id="cpForm" name="input" method="post">
-<input type="text" id="cp" oninput="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Masukan URL" data-clear-btn="true"/>
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://k.top4top.io/m_340088erb1.mp3" id="musikA3");">
 </div>
-<div class="ui-block-b" style="width:40%;margin-top: -5px;">
- <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Product" onClick="javascript: window.open('https://go.imvu.com/shop/product-' + document.getElementById('cp').value);" />
- </form>
- <script>
-  document.getElementById("cp").addEventListener("keyup", function() { this.value = this.value.replace(/[^0-9]/g, ""); });
-</script>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Galau 02" onclick="copasmusikA3()">
 </div>
 </div>
 
-
-
-
-<!-- CEK SAVELOCK PAKE ID-->
-<!-- <div class="ui-grid-a" style="margin-top: -5px;">
-<div class="ui-block-a" style="width:60%;">
-<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "10" id="ceksavelook" placeholder="Masukan ID" data-clear-btn="true"/>
-</div>
-<div class="ui-block-b" style="width:40%;margin-top: -5px;">
- <input type="button" class="btn btn-outline-secondary" id="btn" value="Cek Outfit" onClick="javascript: window.open('https://www.imvu.com/outfits/index.php?just_this_user=' + document.getElementById('ceksavelook').value);" />
-</div>
-</div> -->
-
-
-<!-- COPAS ID PRODUCT BY URL -->
 <div class="ui-grid-a" style="margin-top: -5px;">
-<div class="ui-block-a" style="width:60%;">
-<input type="text" id="inputIDP" oninput="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Masukan URL" data-clear-btn="true">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://b.top4top.io/m_3400vcq6t1.mp3" id="musikA4");">
 </div>
-<div class="ui-block-b" style="width:40%;margin-top: -5px;">
-<input type="submit" id="btn" value="Copy ID" onclick="copasInputIDP()">
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Galau 03" onclick="copasmusikA4()">
 </div>
 </div>
+
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://g.top4top.io/m_3400zvt5u1.mp3" id="musikA5");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Galau 04" onclick="copasmusikA5()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://j.top4top.io/m_34007g13t1.mp3" id="musikA6");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="TOP 100 Spotify" onclick="copasmusikA6()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://l.top4top.io/m_34004beuv1.mp3" id="musikA7");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Ari lasso|Dewa19|Jrock" onclick="copasmusikA7()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://h.top4top.io/m_340190eh71.mp3" id="musikA8");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Metallica" onclick="copasmusikA8()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_34012iyhd1.mp3" id="musikA9");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="My Chemical ROmance" onclick="copasmusikA9()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_34015rv0n1.mp3" id="musikA10");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Mahalini" onclick="copasmusikA10()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://f.top4top.io/m_3401lysm71.mp3" id="musikA11");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="POP INDO TH 2000" onclick="copasmusikA11()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://e.top4top.io/m_3401b17cy1.mp3" id="musikA12");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="POP INDO TH 2024" onclick="copasmusikA12()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://f.top4top.io/m_3401bnaz91.mp3" id="musikA13");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="POP INDO TH 2025" onclick="copasmusikA13()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://d.top4top.io/m_3401nvj881.mp3" id="musikA14");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Lagu Pengantar Tidur" onclick="copasmusikA14()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://j.top4top.io/m_3402pcwx41.mp3" id="musikA15");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Zivilia" onclick="copasmusikA15()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_34039f5md1.mp3" id="musikA16");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix_Lagu Pop Hits Indonesia Tahun 2000" onclick="copasmusikA16()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://c.top4top.io/m_3403f56d21.mp3" id="musikA17");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix_Armada Seventeen dan Republik" onclick="copasmusikA17()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://e.top4top.io/m_3403usfm81.mp3" id="musikA18");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="ANDRA _ THE BACKBONE FULL ALBUM" onclick="copasmusikA18()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://h.top4top.io/m_3403ctkmc1.mp3" id="musikA19");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Mix Lagu Jaman Dulu" onclick="copasmusikA19()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://h.top4top.io/m_340497a9w1.mp3" id="musikA20");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Kumpulan Lagun Anak Senja" onclick="copasmusikA20()">
+</div>
+</div>
+
 <script>
-  document.getElementById("inputIDP").addEventListener("keyup", function() { this.value = this.value.replace(/[^0-9]/g, ""); });
-</script>
+  function copasmusikA1() {
+  var copyText = document.getElementById("musikA1");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+  
+  function copasmusikA2() {
+  var copyText = document.getElementById("musikA2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
 
+  function copasmusikA3() {
+  var copyText = document.getElementById("musikA");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA4() {
+  var copyText = document.getElementById("musikA4");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA5() {
+  var copyText = document.getElementById("musikA5");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA6() {
+  var copyText = document.getElementById("musikA6");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA7() {
+  var copyText = document.getElementById("musikA7");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA8() {
+  var copyText = document.getElementById("musikA8");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA9() {
+  var copyText = document.getElementById("musikA9");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA10() {
+  var copyText = document.getElementById("musikA10");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA11() {
+  var copyText = document.getElementById("musikA11");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA12() {
+  var copyText = document.getElementById("musikA12");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA13() {
+  var copyText = document.getElementById("musikA13");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA14() {
+  var copyText = document.getElementById("musikA14");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikA15() {
+  var copyText = document.getElementById("musikA15");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikA16() {
+  var copyText = document.getElementById("musikA16");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikA17() {
+  var copyText = document.getElementById("musikA17");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikA18() {
+  var copyText = document.getElementById("musikA18");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikA19() {
+  var copyText = document.getElementById("musikA19");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikA20() {
+  var copyText = document.getElementById("musikA20");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+</script>
 </div>
 
+
+<!-- MUSIK B  --> 
+<div id="musik2" class="ui-body-a ui-content">
+<div class="ui-grid-a" style="margin-top: -15px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://a.top4top.io/m_3402r9xwf1.mp3" id="musikB1");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ SLOW BASS REMIX 2024" onclick="copasmusikB1()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://c.top4top.io/m_3402by0dt1.mp3" id="musikB2");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ DJ STECU STECU STELAN CUEK REMIX" onclick="copasmusikB2()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_34020b7ns1.mp3" id="musikB3");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ SLOWBASS TERBARU 2025" onclick="copasmusikB3()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://k.top4top.io/m_3403t5jnj1.mp3" id="musikB4");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Scorpions, Aerosmith, BonJovi, Led Zeppelin" onclick="copasmusikB4()">
+</div>
+</div>
+
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_34039mp5t1.mp3" id="musikB5");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix Avenged Sevenfold" onclick="copasmusikB5()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://k.top4top.io/m_3403nky2k1.mp3" id="musikB6");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix DJ STECU Barat" onclick="copasmusikB6()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://a.top4top.io/m_3404twi2s1.mp3" id="musikB7");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix DJ Vinnie Pargoy" onclick="copasmusikB7()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://g.top4top.io/m_3404cm88b1.mp3" id="musikB8");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="mix DJ Party Vania" onclick="copasmusikB8()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://l.top4top.io/m_34045le1k1.mp3" id="musikB9");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Mix Req Vania" onclick="copasmusikB9()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://e.top4top.io/m_3404vokug1.mp3" id="musikB10");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Mix Chase Atlantic" onclick="copasmusikB10()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://i.top4top.io/m_3404fcp971.mp3" id="musikB11");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="Req Vania 16 Lagu" onclick="copasmusikB11()">
+</div>
+</div>
+
+<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-block-a" style="width:30%;">
+<input type="text" value="https://f.top4top.io/m_3404l4pk91.mp3" id="musikB12");">
+</div>
+<div class="ui-block-b" style="width:70%;margin-top: -5px;">
+<input type="submit" id="btn" value="DJ Barudak Phonk Mix" onclick="copasmusikB12()">
+</div>
+</div>
+
+
+
+<script>
+  function copasmusikB1() {
+  var copyText = document.getElementById("musikB1");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+  
+  function copasmusikB2() {
+  var copyText = document.getElementById("musikB2");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB3() {
+  var copyText = document.getElementById("musikB");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB4() {
+  var copyText = document.getElementById("musikB4");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB5() {
+  var copyText = document.getElementById("musikB5");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB6() {
+  var copyText = document.getElementById("musikB6");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB7() {
+  var copyText = document.getElementById("musikB7");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB8() {
+  var copyText = document.getElementById("musikB8");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB9() {
+  var copyText = document.getElementById("musikB9");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB10() {
+  var copyText = document.getElementById("musikB10");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB11() {
+  var copyText = document.getElementById("musikB11");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB12() {
+  var copyText = document.getElementById("musikB12");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB13() {
+  var copyText = document.getElementById("musikB13");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB14() {
+  var copyText = document.getElementById("musikB14");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+  function copasmusikB15() {
+  var copyText = document.getElementById("musikB15");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikB16() {
+  var copyText = document.getElementById("musikB16");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikB17() {
+  var copyText = document.getElementById("musikB17");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikB18() {
+  var copyText = document.getElementById("musikB18");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikB19() {
+  var copyText = document.getElementById("musikB19");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+
+ function copasmusikB20() {
+  var copyText = document.getElementById("musikB20");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);
+ // Alert the copied text
+  alert("ID Product: " + copyText.value);
+}
+</script>
+</div>
 
 <!-- ROOMLIST --> 
-<div id="roomlist" class="ui-body-a ui-content">
-<div class="ui-block-a" style="width:100%;margin-top: -20px;">
-<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Room..." data-inset="true" style="margin-top: -10px;">
-    <li><a href="https://go.imvu.com/chat/favorite/">Favorite Room</a></li>  
-     <li><a href="https://go.imvu.com/chat/recent/">Recent Room</a></li>
-    <li><a href="https://go.imvu.com/chat/chat_rooms/">ChatRoom</a></li>  
-     
-    <li><a href="https://go.imvu.com/chat/room-272203407-41">Romance daixy🦋</a></li>    
-    <li><a href="https://go.imvu.com/chat/room-253636107-121">Pulau Putri</a></li>
-    <li><a href="https://go.imvu.com/chat/room-354362699-64">Nongskuy</a></li>
-    <li><a href="https://go.imvu.com/chat/room-240280372-91">Lost</a></li>
-    <li><a href="https://go.imvu.com/chat/room-74020741-173">Atap Jomblo</a></li>
-    <li><a href="https://go.imvu.com/chat/room-105746345-366">Jambak</a></li>
-    <li><a href="https://go.imvu.com/chat/room-116355210-33">Jadian Yuk</a></li>
-    <li><a href="https://go.imvu.com/chat/room-116338450-70">Galau</a></li>
-    <li><a href="https://go.imvu.com/chat/room-127382922-75">Singgah</a></li>
-    <li><a href="https://go.imvu.com/chat/room-134034627-47">Tepi</a></li>
-    <li><a href="https://go.imvu.com/chat/room-104869264-28">Kesendirian</a></li>    
-    <li><a href="https://go.imvu.com/chat/room-231778717-55">GWS Jomblo</a></li>    
-    <li><a href="https://go.imvu.com/chat/room-110498183-167">Diatas Normal</a></li>
-    <li><a href="https://go.imvu.com/chat/room-271497171-24">Nongki</a></li>
-    <li><a href="https://go.imvu.com/chat/room-271497171-24">Nongki</a></li>
-    
-    
-</ul>
+<div id="musik3" class="ui-body-a ui-content">
+Musik 3
 </div>
-</div>
+
+
+
+
+
 
 <!-- LINK RADIO STREAMING -->
 <div id="radio" class="ui-body-a ui-content">
-<div class="ui-grid-a" style="margin-top: -5px;">
+<div class="ui-grid-a" style="margin-top: -15px;">
 <div class="ui-block-a" style="width:30%;">
 <input type="text" value="https://stream-153.zeno.fm/vwhplynnpfjtv" id="radio1");">
 </div>
@@ -354,233 +868,9 @@
 
 
 
-<!-- NICK GENERATOR -->
-<div id="nickgen" class="ui-body-a ui-content">
-<div class="ui-grid-a" style="margin-top: -20px;">
-<form name="nick" data-copy="true">  
-<div class="ui-block-a" style="width:100%;">
-<input type="text" id="inputText" oninput="update()" wrap="on" maxlength = "100" name="input" data-clear-btn="true" style="height:50px; font-size:14pt;">
-</div>
-<div class="ui-block-a" style="width:50%;margin-top:-10px;">
-<input type="submit" id="btn" value="Copy" OnClick="copasnickgenz()">
-</div>
-<div class="ui-block-b" style="width:50%;margin-top:-10px;">
-<INPUT TYPE="button" NAME="backspace" VALUE='Backspace' OnClick="nick.input.value =  nick.input.value.substring(0,nick.input.value.length*1 -1)">
-</div>
+
 </div>
 
-<!-- BARIS PERTAMA -->
-<div class="ui-grid-a" style="margin-top: -10px;">
-<div class="ui-block-a" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ͣ" OnClick="nick.input.value += 'ͣ'">
-</div>  
-<div class="ui-block-b" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷧ" OnClick="nick.input.value += 'ᷧ'">
-</div>
-<div class="ui-block-c" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷲ" OnClick="nick.input.value += 'ᷲ'">
-</div>
-<div class="ui-block-d" style="width:11%;">
-<INPUT TYPE="button" NAME="eight" VALUE="ⷡ" OnClick="nick.input.value += 'ⷡ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷨ" OnClick="nick.input.value += 'ᷨ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷩ" OnClick="nick.input.value += 'ᷩ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="nine" VALUE="ⷭ" OnClick="nick.input.value += 'ⷭ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ͩ" OnClick="nick.input.value += 'ͩ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷘ" OnClick="nick.input.value += 'ᷘ'">
-</div>
-</div>
-
-<!-- BARIS KEDUA -->
-<div class="ui-grid-a" style="margin-top: -10px;">
-<div class="ui-block-a" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷷ" OnClick="nick.input.value += 'ⷷ'">
-</div>
-<div class="ui-block-b" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷪ" OnClick="nick.input.value += 'ᷪ'">
-</div>
-<div class="ui-block-c" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷫ" OnClick="nick.input.value += 'ᷫ'">
-</div>
-<div class="ui-block-d" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷚ" OnClick="nick.input.value += 'ᷚ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷩ" OnClick="nick.input.value += 'ⷩ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ͥ" OnClick="nick.input.value += 'ͥ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷯ" OnClick="nick.input.value += 'ᷯ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷦ" OnClick="nick.input.value += 'ⷦ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷞ" OnClick="nick.input.value += 'ᷞ'">
-</div>
-</div>
-
-<!-- BARIS KETIGA -->
-<div class="ui-grid-a" style="margin-top: -10px;">
-<div class="ui-block-a" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷨ" OnClick="nick.input.value += 'ⷨ'">
-</div>
-<div class="ui-block-b" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷠ" OnClick="nick.input.value += 'ᷠ'">
-</div>
-<div class="ui-block-c" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷪ" OnClick="nick.input.value += 'ⷪ'">
-</div>
-<div class="ui-block-d" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷳ" OnClick="nick.input.value += 'ᷳ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷬ" OnClick="nick.input.value += 'ⷬ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷭ" OnClick="nick.input.value += 'ᷭ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷢ" OnClick="nick.input.value += 'ᷢ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷤ" OnClick="nick.input.value += 'ᷤ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷮ" OnClick="nick.input.value += 'ⷮ'">
-</div>
-</div>
-
-<!-- BARIS KEEMPAT -->
-<div class="ui-grid-a" style="margin-top: -10px;">
-  <div class="ui-block-a" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ͧ" OnClick="nick.input.value += 'ͧ'">
-</div>
-<div class="ui-block-b" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷴ" OnClick="nick.input.value += 'ᷴ'">
-</div>
-<div class="ui-block-c" style="width:11%;">
-<INPUT TYPE="button" NAME="seven" VALUE="ᷰ" OnClick="nick.input.value += 'ᷰ'">
-</div>
-<div class="ui-block-d" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ͮ" OnClick="nick.input.value += 'ͮ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷲ" OnClick="nick.input.value += 'ⷲ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ͯ" OnClick="nick.input.value += 'ͯ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ⷱ" OnClick="nick.input.value += 'ⷱ'">
-</div>
-<div class="ui-block-e" style="width:11%;">
-<INPUT TYPE="button" NAME="div" VALUE="ᷦ" OnClick="nick.input.value += 'ᷦ'">
-</div>
-</div>
-<hr>
-<!-- BARIS KELIMA -->
-<div class="ui-grid-a" style="margin-top: -5px;">
-<div class="ui-block-a" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃐" OnClick="nick.input.value += '⃐'">
-</div>
-<div class="ui-block-b" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃑" OnClick="nick.input.value += '⃑'">
-</div>
-<div class="ui-block-c" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃔" OnClick="nick.input.value += '⃔'">
-</div>
-<div class="ui-block-d" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃕" OnClick="nick.input.value += '⃕'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃖" OnClick="nick.input.value += '⃖'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃗" OnClick="nick.input.value += '⃗'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃛" OnClick="nick.input.value += '⃛'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃜" OnClick="nick.input.value += '⃜'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃡" OnClick="nick.input.value += '⃡'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃢" OnClick="nick.input.value += '⃢'">
-</div>
-</div>
-
-<!-- BARIS KEENAM -->
-<div class="ui-grid-a" style="margin-top: -10px;">
-<div class="ui-block-a" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃭" OnClick="nick.input.value += '⃭'">
-</div>
-<div class="ui-block-b" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃭" OnClick="nick.input.value += '⃭'">
-</div>
-<div class="ui-block-c" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃮" OnClick="nick.input.value += '⃮'">
-</div>
-<div class="ui-block-d" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃯" OnClick="nick.input.value += '⃯'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃨" OnClick="nick.input.value += '⃨'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃝" OnClick="nick.input.value += '⃝'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃞" OnClick="nick.input.value += '⃞'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃟" OnClick="nick.input.value += '⃟'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃠" OnClick="nick.input.value += '⃠'">
-</div>
-<div class="ui-block-e" style="width:10%;">
-<INPUT TYPE="button" NAME="seven" VALUE=" ⃤" OnClick="nick.input.value += '⃤'">
-</div>
-</div>
-
-
-
-<textarea id="outputText" rows="2" cols="30" placeholder="Setelah klik tombol COPY
-Cek Dulu Disini Nick Yang Sudah Dibuat"></textarea>
-
-<div class="ui-grid-a" style="margin-top: 10px;">
-<div class="ui-block-a" style="width:20%;">
-<center><span id="word">0</span></center>
-</div>
-<div class="ui-block-b" style="width:30%;">
-<center>Word</center>
-</div>
-<div class="ui-block-c" style="width:20%;">
-<center><span id="char">0</span></center>
-</div>
-<div class="ui-block-d" style="width:30%;">
-Character
-</div>
-</div>
-
-</form>
-</div>
-</div>
 
 
 
