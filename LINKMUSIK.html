@@ -103,11 +103,9 @@
 <div class="ui-block-a animate__animated animate__slideInLeft animate__delay-0s" style="width:100%;margin-top:-10px;margin-left: -0px;">
 <INPUT TYPE="button" data-mini="true" VALUE='50 Lagu Iwan Fals' onclick="copyToClipboard('https://q.top4top.io/m_3437bwyfc0.mp3')">
 </div>
-<!--
 <div class="ui-block-a animate__animated animate__slideInRight animate__delay-1s" style="width:100%;margin-top:-10px;margin-left: -0px;">
-<INPUT TYPE="button" data-mini="true" VALUE='Element & Jikustik' onclick="copyToClipboard('https://c.top4top.io/m_3432r82hx0.mp3')">
+<INPUT TYPE="button" data-mini="true" VALUE='Nike Ardila 106 Lagu' onclick="copyToClipboard('https://files.catbox.moe/0nv50w.mp3')">
 </div>
--->
 
 </div>
 </div>
@@ -401,6 +399,8 @@
 
 
 <script>
+
+//=======SCRIPT COPAS =====================//
 function copyToClipboard(str) {
 
   // Create an auxiliary hidden input
@@ -424,6 +424,44 @@ function copyToClipboard(str) {
   alert("Link Music: " + aux.value);
 
 }
+
+
+
+//=======SCRIPT PLASYSOUND 1 =====================//
+$(document).ready(function() {
+  var audio = $("#myAudio")[0];
+  var playPauseButton = $("#playPauseButton");
+
+  playPauseButton.click(function() {
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.text("Pause");
+    } else {
+      audio.pause();
+      playPauseButton.text("Play");
+    }
+  });
+});
+
+
+//=======SCRIPT PLASYSOUND 2 =====================//
+$(document).ready(function() {
+  var audio = $("#myAudio")[0]; // Get the native audio element
+
+  $("#playButton").click(function() {
+    audio.play();
+  });
+
+  $("#pauseButton").click(function() {
+    audio.pause();
+  });
+
+  $("#stopButton").click(function() {
+    audio.pause();
+    audio.currentTime = 0; // Reset to the beginning
+  });
+});
+
 </script>
 
 <script src="js/footer.js"></script>
