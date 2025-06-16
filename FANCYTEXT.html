@@ -38,8 +38,11 @@
  
 
  <div class="ui-mini ui-grid-a">
- <div class="ui-block-a" style="width:100%;margin-left: -0px;margin-top: -5px;">
-<textarea type="text" class="form-control fancytext" style="width:100%;  background-color:#333333 !important; color:#ffffff" required="required" name="text" placeholder="Type or paste text here.." value=""></textarea>
+ <div class="ui-block-a" style="width:95%;margin-left: -0px;margin-top: -5px;">
+<textarea id="myTextArea" type="text" class="form-control fancytext" style="width:100%;  background-color:#333333 !important; color:#ffffff" required="required" name="text" placeholder="Type or paste text here.." value=""></textarea>
+</div>
+<div class="ui-block-b" style="width:3%;margin-left: 5px;">
+<INPUT TYPE="button" id="clearButton" data-audio="0" data-mini="true" VALUE='clear' data-icon="delete" data-iconpos="notext">
 </div>
 </div>
 
@@ -1480,6 +1483,12 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function() {
+  $("#clearButton").click(function() {
+    $("#myTextArea").val("");
+  });
+});
 
 </script>
 
