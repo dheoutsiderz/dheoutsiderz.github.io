@@ -1,0 +1,79 @@
+[
+{
+id: "1756100345",
+title: "AUTO SUMMIT ATIN",
+script: "loadstring(game:HttpGet("https://pastefy.app/8wfkFr5W/raw"))();",
+detection_status: "undetected"
+},
+{
+id: "1755753866",
+title: "MOUNT CKPTW",
+script: "loadstring(game:HttpGet("https://pastefy.app/5iwvpJko/raw"))()",
+detection_status: "undetected"
+},
+{
+id: "1755626441",
+title: "ADMIN SAFE SCRIPT",
+script: "loadstring(game:HttpGet("https://pastefy.app/PY6vKEnf/raw"))()",
+detection_status: "undetected"
+},
+{
+id: "1755617486",
+title: "SIBUATAN SCRIPT",
+script: "loadstring(game:HttpGet("https://pastefy.app/Qj4EJX1p/raw"))()",
+detection_status: "undetected"
+},
+{
+id: "1755496706",
+title: "FISH IT",
+script: "loadstring(game:HttpGet("https://pastefy.app/T0BKhSw8/raw"))()",
+detection_status: "undetected"
+},
+{
+id: "1755457280",
+title: "MOUNT DAUN",
+script: "loadstring(game:HttpGet("https://pastefy.app/WVnFX91E/raw"))()",
+detection_status: "detected"
+},
+{
+id: "1755413756",
+title: "ADMIN SCRIPT HUB",
+script: "loadstring(game:HttpGet("https://pastefy.app/kbQBhrb3/raw"))()",
+detection_status: "undetected"
+},
+{
+id: "17827826727",
+title: "Redz Hub - Blox Fruits",
+script: "local Settings = {
+    JoinTeam = "Pirates"; -- Pirates / Marines
+    Translator = true;   -- true / false
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)",
+detection_status: "undetected"
+},
+{
+id: "1753277668",
+title: "Amy - Hub",
+script: "loadstring(game:HttpGet("https://raw.githubusercontent.com/GoblinKun009/Script/refs/heads/main/amyhub", true))()",
+detection_status: "undetected"
+},
+{
+id: "1753277642",
+title: "Cokka Hub - Blox Fruits",
+script: "loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()",
+detection_status: "undetected"
+},
+{
+id: "1753276989",
+title: "Hoho Hub - Blox Fruits",
+script: "loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua"))()",
+detection_status: "undetected"
+},
+{
+id: "1753276748",
+title: "Boost Fps - Universal",
+script: "repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+loadstring(game:HttpGet("https://pastefy.app/08huVciY/raw"))()",
+detection_status: "undetected"
+}
+]

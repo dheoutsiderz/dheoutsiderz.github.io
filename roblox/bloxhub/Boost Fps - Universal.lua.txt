@@ -1,0 +1,225 @@
+-- FPS Booster
+-- By BloxStore
+
+local TweenService = game:GetService("TweenService")
+local Players = game:GetService("Players")
+local Lighting = game:GetService("Lighting")
+local StarterGui = game:GetService("StarterGui")
+local RunService = game:GetService("RunService")
+local Terrain = workspace:FindFirstChildOfClass("Terrain")
+
+if not _G.Settings then
+    _G.Settings = {
+        Graphics = {
+            FPS = 120,
+            QualityLevel = 1,
+            MeshPartDetail = 1,
+            WaterQuality = 0,
+            ShadowQuality = 0,
+            MaterialQuality = 0,
+            RemoveSky = true,
+            RemoveAtmosphere = true,
+            RemoveClouds = true
+        },
+        Optimizations = {
+            RemoveClothing = true,
+            RemoveAccessories = true,
+            RemoveParticles = true,
+            RemoveEffects = true,
+            RemoveTextures = true,
+            RemoveMeshes = false,
+            RemoveExplosions = true,
+            RemovePostEffects = true,
+            RemoveLights = true,
+            RemoveDecals = true
+        },
+        Notifications = true
+    }
+end
+
+-- Notification system using Roblox's built-in notifications
+local function showNotification(title, text, duration)
+    if not _G.Settings.Notifications then return end
+    
+    StarterGui:SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = duration or 5,
+        Button1 = "Okay"
+    })
+end
+
+-- Core optimization functions
+local function optimizeGraphics()
+    showNotification("FPS Booster", "Starting optimizations...", 2)
+    task.wait(0.5)
+    
+    -- Set FPS
+    local success, err = pcall(function()
+        if setfpscap then
+            showNotification("FPS Booster", "Setting FPS to " .. _G.Settings.Graphics.FPS, 2)
+            setfpscap(_G.Settings.Graphics.FPS)
+        else
+            showNotification("FPS Booster", "FPS Cap (setfpscap) not supported by executor.", 3)
+        end
+    end)
+    if not success then
+        showNotification("FPS Booster", "Error setting FPS: " .. err, 3)
+    end
+    task.wait(0.5)
+    
+    -- Optimize rendering
+    showNotification("FPS Booster", "Optimizing rendering quality...", 2)
+    settings().Rendering.QualityLevel = _G.Settings.Graphics.QualityLevel
+    settings().Rendering.MeshPartDetailLevel = Enum.MeshPartDetailLevel.Level01
+    task.wait(0.5)
+    
+    -- Optimize lighting
+    showNotification("FPS Booster", "Removing shadows and fog...", 2)
+    Lighting.GlobalShadows = false
+    Lighting.ShadowSoftness = 0
+    Lighting.FogEnd = 9e9
+    task.wait(0.5)
+    
+    -- Optimize terrain
+    if Terrain then
+        showNotification("FPS Booster", "Optimizing water effects...", 2)
+        Terrain.WaterWaveSize = _G.Settings.Graphics.WaterQuality
+        Terrain.WaterWaveSpeed = 0
+        Terrain.WaterReflectance = 0
+        Terrain.WaterTransparency = 0
+        if pcall(sethiddenproperty, Terrain, "Decoration", false) then
+            -- Decoration hidden successfully
+        else
+            showNotification("FPS Booster", "Terrain decoration removal not supported.", 2)
+        end
+        task.wait(0.5)
+    end
+
+    -- Aggressively remove Sky, Atmosphere, and Clouds
+    if _G.Settings.Graphics.RemoveSky then
+        showNotification("FPS Booster", "Removing sky elements...", 2)
+        for _, v in pairs(Lighting:GetDescendants()) do
+            if v:IsA("Sky") or v:IsA("Atmosphere") or v:IsA("Clouds") then
+                v:Destroy()
+            end
+        end
+        for _, v in pairs(workspace:GetDescendants()) do
+            if v:IsA("Sky") or v:IsA("Atmosphere") or v:IsA("Clouds") then
+                v:Destroy()
+            end
+        end
+        task.wait(0.5)
+    end
+end
+
+local function optimizeInstance(instance)
+    if not instance then return end
+    
+    -- Remove clothing and accessories
+    if _G.Settings.Optimizations.RemoveClothing and (instance:IsA("Clothing") or instance:IsA("SurfaceAppearance")) then
+        instance:Destroy()
+        return
+    end
+    
+    -- Remove particles and effects
+    if _G.Settings.Optimizations.RemoveParticles and (instance:IsA("ParticleEmitter") or instance:IsA("Trail") or instance:IsA("Smoke") or instance:IsA("Fire") or instance:IsA("Sparkles")) then
+        instance.Enabled = false
+        return
+    end
+    
+    -- Remove textures
+    if _G.Settings.Optimizations.RemoveTextures and instance:IsA("Texture") then
+        instance.Transparency = 1
+        return
+    end
+    
+    -- Remove meshes
+    if _G.Settings.Optimizations.RemoveMeshes and instance:IsA("SpecialMesh") then
+        instance.MeshId = ""
+        return
+    end
+    
+    -- Remove explosions
+    if _G.Settings.Optimizations.RemoveExplosions and instance:IsA("Explosion") then
+        instance.BlastPressure = 1
+        instance.BlastRadius = 1
+        instance.Visible = false
+        return
+    end
+    
+    -- Remove post effects
+    if _G.Settings.Optimizations.RemovePostEffects and instance:IsA("PostEffect") then
+        instance.Enabled = false
+        return
+    end
+
+    -- New: Remove Lights
+    if _G.Settings.Optimizations.RemoveLights and (instance:IsA("SpotLight") or instance:IsA("PointLight") or instance:IsA("SurfaceLight")) then
+        instance.Enabled = false -- Disable lights
+        instance:Destroy() -- Or destroy them if disabling isn't enough
+        return
+    end
+
+    -- New: Remove Beams
+    if _G.Settings.Optimizations.RemoveEffects and instance:IsA("Beam") then
+        instance.Enabled = false
+        return
+    end
+
+    -- New: Remove Decals
+    if _G.Settings.Optimizations.RemoveDecals and instance:IsA("Decal") then
+        instance.Transparency = 1
+        instance:Destroy() -- Destroy decals
+        return
+    end
+    
+    -- Optimize parts
+    if instance:IsA("BasePart") then
+        instance.Material = Enum.Material.Plastic
+        instance.Reflectance = 0
+    end
+
+    -- Also remove Sky, Atmosphere, Clouds if they are added dynamically
+    if _G.Settings.Graphics.RemoveSky and (instance:IsA("Sky") or instance:IsA("Atmosphere") or instance:IsA("Clouds")) then
+        instance:Destroy()
+        return
+    end
+end
+
+-- Initialize optimizations
+local function initialize()
+    -- Show initial loader
+    showNotification("FPS Booster", "Loading FPS Booster...", math.huge)
+    task.wait(3)
+
+    local success, err = pcall(function()
+        optimizeGraphics()
+        
+        -- Optimize existing instances
+        showNotification("FPS Booster", "Optimizing existing game objects...", 2)
+        for _, instance in pairs(game:GetDescendants()) do
+            optimizeInstance(instance)
+        end
+        task.wait(0.5)
+        
+        -- Optimize new instances
+        showNotification("FPS Booster", "Monitoring new game objects...", 2)
+        game.DescendantAdded:Connect(optimizeInstance)
+        task.wait(0.5)
+        
+        -- Final progress notification
+        showNotification("FPS Booster", "Optimizations completed successfully!", 2)
+        task.wait(2)
+
+        -- Show final message
+        showNotification("FPS Booster", "FPS BOOSTED BY BLOXSTORE", math.huge)
+
+    end)
+    if not success then
+        showNotification("FPS Booster", "Script Failed: " .. err, 5)
+    end
+end
+
+-- Start optimizations
+initialize() 
