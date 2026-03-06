@@ -40,7 +40,7 @@ end
 -- WINDOW UTAMA
 -----------------------------------------------------------
 local main = Instance.new("Frame", sg)
-main.Size = UDim2.new(0, 600, 0, 320) 
+main.Size = UDim2.new(0, 550, 0, 320) 
 main.Position = UDim2.new(0.5, -300, 0.5, -160)
 main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 main.Active = true
