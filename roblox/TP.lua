@@ -40,7 +40,7 @@ end
 -- WINDOW UTAMA
 -----------------------------------------------------------
 local main = Instance.new("Frame", sg)
-main.Size = UDim2.new(0, 450, 0, 320) 
+main.Size = UDim2.new(0, 500, 0, 280) 
 main.Position = UDim2.new(0.5, -300, 0.5, -160)
 main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 main.Active = true
@@ -70,7 +70,7 @@ container.Size = UDim2.new(1, -20, 1, -60); container.Position = UDim2.new(0, 10
 local leftGrid = Instance.new("ScrollingFrame", container)
 leftGrid.Size = UDim2.new(0.52, 0, 1, 0)
 leftGrid.BackgroundTransparency = 1; leftGrid.ScrollBarThickness = 2; leftGrid.AutomaticCanvasSize = Enum.AutomaticSize.Y
-local lLayout = Instance.new("UIListLayout", leftGrid); lLayout.Padding = UDim.new(0, 6)
+local lLayout = Instance.new("UIListLayout", leftGrid); lLayout.Padding = UDim.new(0, 2)
 
 -- GRID 2 (KANAN - MANUAL & SAVED)
 local rightGrid = Instance.new("Frame", container)
@@ -378,7 +378,7 @@ local function createMapDrop(name, data)
     
     local cont = Instance.new("Frame", frame)
     cont.Position = UDim2.new(0, 8, 0, 40); cont.Size = UDim2.new(1, -16, 0, 0); cont.BackgroundTransparency = 1
-    local gl = Instance.new("UIGridLayout", cont); gl.CellSize = UDim2.new(0.5, -5, 0, 30); gl.CellPadding = UDim2.new(0, 5, 0, 5)
+    local gl = Instance.new("UIGridLayout", cont); gl.CellSize = UDim2.new(0.5, -5, 0, 30); gl.CellPadding = UDim2.new(0, 2, 0, 2)
     
     for _, item in ipairs(data) do
         local btn = Instance.new("TextButton", cont); btn.Text = item.name; btn.BackgroundColor3 = Color3.fromRGB(100, 0, 0); btn.TextColor3 = Color3.new(1,1,1); btn.TextSize = 10; btn.Font = "GothamBold"; createCorner(btn, 4)
