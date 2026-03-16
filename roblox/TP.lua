@@ -148,11 +148,27 @@ local Maps = {
             {name="Spot Kraken 1", pos=Vector3.new(-3660,-135,-959)},
             {name="Spot Kraken 2", pos=Vector3.new(-3734,-136,-1014)},
             {name="Spot Kraken 3", pos=Vector3.new(-3700,-136,-1014)},
-            {name="Spot King Crab", pos=Vector3.new(-3604,-280,-1589)},
+            {name="Spot King Crab", pos=Vector3.new(-3608, -280, -1585)},
             {name="Spot Jelly Crab", pos=Vector3.new(-3605,-280,-1591)},
             {name="Spot Lochness 1", pos=Vector3.new(-619,7,639)},
             {name="Spot Lochness 2", pos=Vector3.new(-658,17,491)},
             {name="Spot Lochness 3", pos=Vector3.new(-626,19,422)}
+        }
+    },
+	{
+        name = "Planet Observatory",
+        spots = {
+            {name="Submarine Operator", pos=Vector3.new(421, 3, 2185)},
+            {name="D.M.C Meteorologist", pos=Vector3.new(426, 31, 2100)},
+			{name="Spot Meteor Shark 1", pos=Vector3.new(474, 5, 2217)},
+			{name="Spot Meteor Shark 2", pos=Vector3.new(525, 4, 2256)},
+			{name="Buy Charm Meteor", pos=Vector3.new(-3177, -639, -10569)},
+			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
+			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
+			{name="Spot 2 Pipa ", pos=Vector3.new(-3092, -640, -10475)},
+			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
+			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
+			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
     {
@@ -339,16 +355,7 @@ local Maps = {
             {name="Leviatan Atas", pos=Vector3.new(3497,-246,3539)}
         }
     },
-	{
-        name = "Planet Observatory",
-        spots = {
-            {name="Submarine Operator", pos=Vector3.new(421, 3, 2185)},
-            {name="D.M.C Meteorologist", pos=Vector3.new(426, 31, 2100)},
-			{name="Buy Charm Meteor", pos=Vector3.new(5009, 4934, 5005)},
-			{name="Spot 1", pos=Vector3.new(362, 5, 2124)},
-			{name="Spot 2", pos=Vector3.new(362, 5, 2124)},
-        }
-    },
+	
     {
         name = "Weather Machine",
         spots = {
