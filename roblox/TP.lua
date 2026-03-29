@@ -164,14 +164,16 @@ local Maps = {
 			{name="Spot Meteor Shark 2", pos=Vector3.new(525, 4, 2256)},
 			{name="Buy Charm Meteor", pos=Vector3.new(-3177, -639, -10569)},
 			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
+			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
 			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
-			{name="Spot 2 Pipa ", pos=Vector3.new(-3092, -640, -10475)},
+			{name="Spot 2 Pipa", pos=Vector3.new(-3092, -640, -10475)},
+			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
 			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
 			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
-    {
+	{
         name = "Ancient Jungle",
         spots = {
             {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
@@ -208,6 +210,37 @@ local Maps = {
             {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
         }
     },
+	{
+        name = "EID MUBARAK",
+        spots = {
+            {name="Bawah Kanan", pos=Vector3.new(252, 2, 2924)},
+            {name="Atas Kanan", pos=Vector3.new(259, 15, 2907)},
+			{name="Atas Tengah", pos=Vector3.new(256, 15, 2893)},
+			{name="Atas Kiri", pos=Vector3.new(251, 15, 2879)},
+			{name="Bawah Kiri", pos=Vector3.new(235, 3, 2870)},
+			
+        }
+    },
+	    {
+        name = "!Pirate Cove",
+        spots = {
+            {name="Spot Leviatan", pos=Vector3.new(3422,4,3507)},
+            {name="Spot Mega 1", pos=Vector3.new(3398,4,3458)},
+            {name="Spot Mega 2", pos=Vector3.new(3390,8,3320)},
+            {name="Spot Batu", pos=Vector3.new(3398,10,3490)},
+            {name="Maze Room", pos=Vector3.new(3432,-300,3360)},
+            {name="Pirate Treasure", pos=Vector3.new(3337,-300,3104)},
+			{name="Misi Rod Leviatan", pos=Vector3.new(3313, -299, 3002)},
+			{name="Goblin Shark", pos=Vector3.new(3356, -299, 3039)},
+            {name="Crystall Depth", pos=Vector3.new(5749,-905,15393)},
+            {name="Gran Maja", pos=Vector3.new(5638,-900,15352)},
+            {name="Kraken 1 (PC)", pos=Vector3.new(5639,-879,15396)},
+            {name="Kraken 2 (PC)", pos=Vector3.new(5685,-896,15327)},
+            {name="Cristalized 1", pos=Vector3.new(5830,-896,15346)},
+			{name="Cursed Kraken", pos=Vector3.new(5614, -904, 15344)},
+        }
+    },
+    
     {
         name = "Corral Reff",
         spots = {
@@ -326,24 +359,7 @@ local Maps = {
             {name="Treasure 2", pos=Vector3.new(-3594,-282,-1644)}
         }
     },
-    {
-        name = "!Pirate Cove",
-        spots = {
-            {name="Spot Leviatan", pos=Vector3.new(3422,4,3507)},
-            {name="Spot Mega 1", pos=Vector3.new(3398,4,3458)},
-            {name="Spot Mega 2", pos=Vector3.new(3390,8,3320)},
-            {name="Spot Batu", pos=Vector3.new(3398,10,3490)},
-            {name="Maze Room", pos=Vector3.new(3432,-300,3360)},
-            {name="Pirate Treasure", pos=Vector3.new(3337,-300,3104)},
-			{name="Misi Rod Leviatan", pos=Vector3.new(3313, -299, 3002)},
-			{name="Goblin Shark", pos=Vector3.new(3356, -299, 3039)},
-            {name="Crystall Depth", pos=Vector3.new(5749,-905,15393)},
-            {name="Gran Maja", pos=Vector3.new(5638,-900,15352)},
-            {name="Kraken 1 (PC)", pos=Vector3.new(5639,-879,15396)},
-            {name="Kraken 2 (PC)", pos=Vector3.new(5685,-896,15327)},
-            {name="Cristalized", pos=Vector3.new(5830,-896,15346)}
-        }
-    },
+
     {
         name = "!Leviatan Den",
         spots = {
