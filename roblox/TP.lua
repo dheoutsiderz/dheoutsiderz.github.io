@@ -174,6 +174,17 @@ local Maps = {
         }
     },
 	{
+        name = "Sewers",
+        spots = {
+            {name="Pintu Masuk", pos=Vector3.new(-1419, -1042, -10413)},
+            {name="Charm RDA", pos=Vector3.new(-1459, -1042, -10482)},
+			{name="Posisi Tengah", pos=Vector3.new(-1443, -1042, -10447)},
+			{name="Depan Charm", pos=Vector3.new(-1472, -1042, -10475)},
+			{name="Pagar Lubang Air", pos=Vector3.new(-1496, -1042, -10450)},
+			
+        }
+    },
+	{
         name = "Ancient Jungle",
         spots = {
             {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
