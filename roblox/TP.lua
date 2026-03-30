@@ -185,6 +185,15 @@ local Maps = {
         }
     },
 	{
+        name = "ThunderZilla",
+        spots = {
+            {name="Depan Batu", pos=Vector3.new(2117, 0, 21)},
+            {name="Spot Kiri", pos=Vector3.new(2061, 0, 62)},
+			{name="Spot Kanan", pos=Vector3.new(2072, 0, -36)},
+			
+        }
+    },
+	{
         name = "Ancient Jungle",
         spots = {
             {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
