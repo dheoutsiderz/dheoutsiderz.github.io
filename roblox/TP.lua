@@ -190,6 +190,8 @@ local Maps = {
             {name="Depan Batu", pos=Vector3.new(2117, 0, 21)},
             {name="Spot Kiri", pos=Vector3.new(2061, 0, 62)},
 			{name="Spot Kanan", pos=Vector3.new(2072, 0, -36)},
+			{name="Spot Dpn Jungle", pos=Vector3.new(2013, 1, 3)},
+			{name="Dpn Jungle", pos=Vector3.new(1786, 0, -12)},
 			
         }
     },
