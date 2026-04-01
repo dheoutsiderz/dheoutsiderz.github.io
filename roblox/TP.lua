@@ -164,6 +164,8 @@ local Maps = {
 			{name="Spot Meteor Shark 2", pos=Vector3.new(525, 4, 2256)},
 			{name="Buy Charm Meteor", pos=Vector3.new(-3177, -639, -10569)},
 			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
+			{name="Atas Atlantis Machine", pos=Vector3.new(-3165, -624, -10449)},
+			{name="Tengah Tengah", pos=Vector3.new(-3143, -644, -10412)},
 			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
 			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
 			{name="Spot 2 Pipa", pos=Vector3.new(-3092, -640, -10475)},
@@ -413,6 +415,7 @@ local Maps = {
         }
     },
 }
+
 
 local function createMapDrop(name, data)
     local frame = Instance.new("Frame", leftGrid)
