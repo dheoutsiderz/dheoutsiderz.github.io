@@ -44,7 +44,7 @@ BurgerStroke.Color = Color3.new(1, 1, 1)
 ----------------------------------------------------------------
 local MainFrame = Instance.new("Frame", ScreenGui)
 MainFrame.Size = UDim2.new(0, 320, 0, 360) 
-MainFrame.Position = UDim2.new(0.5, -300, 0.5, -160)
+MainFrame.Position = UDim2.new(0.017, -300, 0.5, -180)
 MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 MainFrame.BorderSizePixel = 0
 MainFrame.Active = true
