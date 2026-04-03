@@ -464,7 +464,15 @@ for n, p in pairs(_G.TelePositions) do createCard(n, p) end
 
 -- Burger Toggle
 local burger = Instance.new("TextButton", sg)
-burger.Size = UDim2.fromOffset(45, 45); burger.Position = UDim2.new(0.01, 0, 0.5, 0); burger.BackgroundColor3 = Color3.fromRGB(45, 0, 0); burger.Text = "TP"; burger.TextColor3 = Color3.new(1,1,1); burger.Font="GothamBlack"; burger.Visible = false; createCorner(burger, 22); makeDraggable(burger)
+burger.Size = UDim2.fromOffset(45, 45); 
+burger.Position = UDim2.new(0.01, 0, 0.5, 0); 
+burger.BackgroundColor3 = Color3.fromRGB(45, 0, 0); 
+burger.Text = "TP"; 
+burger.TextColor3 = Color3.new(1,1,1); 
+burger.Font="GothamBlack"; 
+burger.Visible = false; 
+createCorner(burger, 22); 
+makeDraggable(burger)
 
 minBtn.MouseButton1Click:Connect(function() main.Visible = false; burger.Visible = true end)
 burger.MouseButton1Click:Connect(function() main.Visible = true; burger.Visible = false end)
