@@ -41,7 +41,7 @@ end
 -----------------------------------------------------------
 local main = Instance.new("Frame", sg)
 main.Size = UDim2.new(0, 500, 0, 280) 
-main.Position = UDim2.new(0.5, -300, 0.5, -160)
+main.Position = UDim2.new(0.5, -300, 0.5, -180)
 main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 main.Active = true
 createCorner(main, 10)
