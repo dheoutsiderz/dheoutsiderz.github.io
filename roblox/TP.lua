@@ -201,11 +201,11 @@ local Maps = {
         name = "Ancient Jungle",
         spots = {
             {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
+			{name="Enchant Kuil", pos=Vector3.new(1482,127,-581)},
             {name="Jual Ikan Jungle", pos=Vector3.new(1327,7,-207)},
             {name="Beli Bamboo Rod", pos=Vector3.new(1572,-42,-644)},
             {name="Beli Floral Bait", pos=Vector3.new(1380,-42,-620)},
             {name="Kuil", pos=Vector3.new(1475,-22,-631)},
-            {name="Enchant Kuil", pos=Vector3.new(1482,127,-581)},   
             {name="Pintu Misi Element", pos=Vector3.new(1887,7,-578)},
             {name="Papan Misi Element", pos=Vector3.new(2099,-92,-699)},
             {name="kuil bawah", pos=Vector3.new(6053,-539,4403)},
@@ -235,14 +235,14 @@ local Maps = {
         }
     },
 	{
-        name = "EID MUBARAK",
+        name = "Easter Cave",
         spots = {
-            {name="Bawah Kanan", pos=Vector3.new(252, 2, 2924)},
-            {name="Atas Kanan", pos=Vector3.new(259, 15, 2907)},
-			{name="Atas Tengah", pos=Vector3.new(256, 15, 2893)},
-			{name="Atas Kiri", pos=Vector3.new(251, 15, 2879)},
-			{name="Bawah Kiri", pos=Vector3.new(235, 3, 2870)},
-			
+            {name="Pastel egg Charm", pos=Vector3.new(1059, -49, 2642)},
+            {name="Buy Emote", pos=Vector3.new(1184, 4, 2772)},
+			{name="NPC Rabbit", pos=Vector3.new(1170, 10, 2694)},
+			{name="Egg Machine", pos=Vector3.new(1186, 10, 2595)},
+			{name="Chocolate Charm", pos=Vector3.new(1076, 11, 2645)},
+			{name="Sell Ikan", pos=Vector3.new(1058, 10, 2665)},
         }
     },
 	    {
@@ -415,6 +415,7 @@ local Maps = {
         }
     },
 }
+
 
 
 local function createMapDrop(name, data)
