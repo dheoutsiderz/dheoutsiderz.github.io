@@ -209,6 +209,7 @@ local Maps = {
             {name="Pintu Misi Element", pos=Vector3.new(1887,7,-578)},
             {name="Papan Misi Element", pos=Vector3.new(2099,-92,-699)},
             {name="kuil bawah", pos=Vector3.new(6053,-539,4403)},
+			{name="Spot Ancient Jungle", pos=Vector3.new(1356, 2, -451)},
             {name="Jamur Ungu", pos=Vector3.new(1494,17,-351)},
             {name="Jamur Merah", pos=Vector3.new(1517,15,-325)},
             {name="Jamur Ijo", pos=Vector3.new(1482,11,-300)},
