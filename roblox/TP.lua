@@ -245,6 +245,7 @@ local Maps = {
 			{name="Egg Machine", pos=Vector3.new(1186, 10, 2595)},
 			{name="Chocolate Charm", pos=Vector3.new(1076, 11, 2645)},
 			{name="Sell Ikan", pos=Vector3.new(1058, 10, 2665)},
+			{name="Spot Strobery Orca", pos=Vector3.new(1131, 11, 2691)},
         }
     },
 	    {
