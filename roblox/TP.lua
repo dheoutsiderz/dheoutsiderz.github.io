@@ -194,6 +194,7 @@ local Maps = {
 			{name="Spot Kanan", pos=Vector3.new(2072, 0, -36)},
 			{name="Spot Dpn Jungle", pos=Vector3.new(2013, 1, 3)},
 			{name="Dpn Jungle", pos=Vector3.new(1786, 0, -12)},
+			{name="Spot ThunderZIlla", pos=Vector3.new(2015, 8, -1)},
 			
         }
     },
