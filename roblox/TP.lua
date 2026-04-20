@@ -156,6 +156,32 @@ local Maps = {
         }
     },
 	{
+        name = "Easter Cave",
+        spots = {
+            {name="Pastel egg Charm", pos=Vector3.new(1059, -49, 2642)},
+            {name="Buy Emote", pos=Vector3.new(1184, 4, 2772)},
+			{name="NPC Rabbit", pos=Vector3.new(1170, 10, 2694)},
+			{name="Egg Machine", pos=Vector3.new(1186, 10, 2595)},
+			{name="Chocolate Charm", pos=Vector3.new(1076, 11, 2645)},
+			{name="Sell Ikan", pos=Vector3.new(1058, 10, 2665)},
+			{name="Jembatan Cave", pos=Vector3.new(1148, -47, 2764)},
+			{name="Spot Strobery Orca", pos=Vector3.new(1131, 11, 2691)},
+        }
+    },
+{
+        name = "Esoterik",
+        spots = {
+            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
+            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
+            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
+            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
+            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
+            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+        }
+    },
+
+	{
         name = "Planet Observatory",
         spots = {
             {name="Submarine Operator", pos=Vector3.new(421, 3, 2185)},
@@ -210,7 +236,6 @@ local Maps = {
             {name="Pintu Misi Element", pos=Vector3.new(1887,7,-578)},
             {name="Papan Misi Element", pos=Vector3.new(2099,-92,-699)},
             {name="kuil bawah", pos=Vector3.new(6053,-539,4403)},
-			{name="Spot Ancient Jungle", pos=Vector3.new(1356, 2, -451)},
             {name="Jamur Ungu", pos=Vector3.new(1494,17,-351)},
             {name="Jamur Merah", pos=Vector3.new(1517,15,-325)},
             {name="Jamur Ijo", pos=Vector3.new(1482,11,-300)},
@@ -236,18 +261,6 @@ local Maps = {
             {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
         }
     },
-	{
-        name = "Easter Cave",
-        spots = {
-            {name="Pastel egg Charm", pos=Vector3.new(1059, -49, 2642)},
-            {name="Buy Emote", pos=Vector3.new(1184, 4, 2772)},
-			{name="NPC Rabbit", pos=Vector3.new(1170, 10, 2694)},
-			{name="Egg Machine", pos=Vector3.new(1186, 10, 2595)},
-			{name="Chocolate Charm", pos=Vector3.new(1076, 11, 2645)},
-			{name="Sell Ikan", pos=Vector3.new(1058, 10, 2665)},
-			{name="Spot Strobery Orca", pos=Vector3.new(1131, 11, 2691)},
-        }
-    },
 	    {
         name = "!Pirate Cove",
         spots = {
@@ -256,6 +269,8 @@ local Maps = {
             {name="Spot Mega 2", pos=Vector3.new(3390,8,3320)},
             {name="Spot Batu", pos=Vector3.new(3398,10,3490)},
             {name="Maze Room", pos=Vector3.new(3432,-300,3360)},
+			{name="Exchange Kraken", pos=Vector3.new(5698, -892, 15291)},
+			{name="Exchange Diary", pos=Vector3.new(5836, -895, 15329)},
             {name="Pirate Treasure", pos=Vector3.new(3337,-300,3104)},
 			{name="Misi Rod Leviatan", pos=Vector3.new(3313, -299, 3002)},
 			{name="Goblin Shark", pos=Vector3.new(3356, -299, 3039)},
@@ -289,18 +304,7 @@ local Maps = {
             {name="Spot 3 Creater", pos=Vector3.new(981,43,5072)}  
         }
     },
-    {
-        name = "Esoterik",
-        spots = {
-            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
-            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
-            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
-            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
-            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
-            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
-        }
-    },
+    
     {
         name = "Fisherman",
         spots = {
@@ -409,12 +413,28 @@ local Maps = {
     {
         name = "Salon De Fiestas",
         spots = {
-           {name="Tengah Titan", pos=Vector3.new(-86,2,36)},
-            {name="Atas Atap", pos=Vector3.new(-84,49,22)},
-            {name="Balkon Depan Luar", pos=Vector3.new(-86,26,-27)},
-            {name="Balkon Belakang Luar", pos=Vector3.new(-89,26,100)},
-            {name="Balkon Kiri Luar", pos=Vector3.new(-18,30,21)},
-            {name="Balkon Kanan Luar", pos=Vector3.new(-155,30,31)}
+           {name="Tengah Titan", pos=Vector3.new(115,4,104)},
+            {name="Atas Atap", pos=Vector3.new(127,52,103)},
+            {name="Balkon Depan Luar", pos=Vector3.new(124,24,33)},
+            {name="Balkon Belakang Luar", pos=Vector3.new(125,24,156)},
+            {name="Balkon Kiri Luar", pos=Vector3.new(191,24,103)},
+            {name="Balkon Kanan Luar", pos=Vector3.new(53,24,109)}
+        }
+    },
+	{
+        name = "Vibu",
+        spots = {
+            {name="CP 01", pos=Vector3.new(23, 59, -342)},
+            {name="CP 02", pos=Vector3.new(618, 184, -1412)},
+			{name="CP 03", pos=Vector3.new(1228, 484, -2685)},
+			{name="CP 04", pos=Vector3.new(1638, 680, -3972)},
+			{name="CP 05", pos=Vector3.new(1633, 1032, -5240)},
+			{name="CP 06", pos=Vector3.new(1302, 1228, -6774)},
+			{name="CP 07", pos=Vector3.new(758, 1312, -7922)},
+			{name="CP 08", pos=Vector3.new(669, 1328, -9163)},
+			{name="CP 09", pos=Vector3.new(985, 1756, -10378)},
+			{name="CP 10", pos=Vector3.new(1333, 2076, -11407)},
+			{name="Summit", pos=Vector3.new(671, 2481, -12277)},
         }
     },
 }
