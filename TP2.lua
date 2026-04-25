@@ -1,5 +1,5 @@
 --=========================================
--- 📱 VALHALLA V.10 (MODDED) — FULL COMPLETE
+-- 📱 Spy & Teleport V.2
 --=========================================
 
 local Players = game:GetService("Players")
@@ -53,7 +53,7 @@ local Title = Instance.new("TextLabel", Header)
 Title.Size = UDim2.new(1, -70, 1, 0)
 Title.Position = UDim2.new(0, 10, 0, 0)
 Title.BackgroundTransparency = 1
-Title.Text = "VALHALLA V.10 (MODDED)"
+Title.Text = "Spy & Teleport V.2"
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.Font = Enum.Font.GothamBlack
 Title.TextSize = 10
