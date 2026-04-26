@@ -156,16 +156,16 @@ local Maps = {
         }
     },
 	{
-        name = "Easter Cave",
+        name = "Classic Island",
         spots = {
-            {name="Pastel egg Charm", pos=Vector3.new(1059, -49, 2642)},
-            {name="Buy Emote", pos=Vector3.new(1184, 4, 2772)},
-			{name="NPC Rabbit", pos=Vector3.new(1170, 10, 2694)},
-			{name="Egg Machine", pos=Vector3.new(1186, 10, 2595)},
-			{name="Chocolate Charm", pos=Vector3.new(1076, 11, 2645)},
-			{name="Sell Ikan", pos=Vector3.new(1058, 10, 2665)},
-			{name="Jembatan Cave", pos=Vector3.new(1148, -47, 2764)},
-			{name="Spot Strobery Orca", pos=Vector3.new(1131, 11, 2691)},
+            {name="Jual Ikan", pos=Vector3.new(1293, 14, 2795)},
+            {name="Pizza Man NPC", pos=Vector3.new(1240, 11, 2771)},
+			{name="Party Wizard NPC", pos=Vector3.new(1269, 11, 2789)},
+			{name="Charm Boombox", pos=Vector3.new(1291, 11, 2824)},
+			{name="Classic Machine", pos=Vector3.new(1321, 48, 2759)},
+			{name="Jhon doe NPC", pos=Vector3.new(11321, 48, 2759)},
+			{name="Jembatan", pos=Vector3.new(1405, 63, 2869)},
+			{name="Spot 1", pos=Vector3.new(1405, 63, 2869)},
         }
     },
 {
