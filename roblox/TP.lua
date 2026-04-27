@@ -166,18 +166,9 @@ local Maps = {
 			{name="Jhon doe NPC", pos=Vector3.new(11321, 48, 2759)},
 			{name="Jembatan", pos=Vector3.new(1405, 63, 2869)},
 			{name="Spot 1", pos=Vector3.new(1405, 63, 2869)},
-        }
-    },
-{
-        name = "Esoterik",
-        spots = {
-            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
-            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
-            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
-            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
-            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
-            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+			{name="Spot 2", pos=Vector3.new(1227, 26, 2734)},
+			{name="Spot 3", pos=Vector3.new(1315, 14, 2697)},
+			{name="Claime Parkur", pos=Vector3.new(1512, 144, 2847)},
         }
     },
 
