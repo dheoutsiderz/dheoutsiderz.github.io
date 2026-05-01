@@ -1,5 +1,5 @@
 --=========================================
--- 📱 Spy & Teleport V.2
+-- 📱 Spy & Teleport V.2 (LEFT SIDEBAR)
 --=========================================
 
 local Players = game:GetService("Players")
@@ -17,37 +17,43 @@ ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ResetOnSpawn = false
 
 ----------------------------------------------------------------
--- BURGER BUTTON
+-- BURGER BUTTON (POSISI KIRI)
 ----------------------------------------------------------------
 local BurgerFrame = Instance.new("TextButton", ScreenGui)
 BurgerFrame.Name = "BurgerMenu"
 BurgerFrame.Size = UDim2.new(0, 45, 0, 45)
-BurgerFrame.Position = UDim2.new(0.017, 2, 1, -265)
+BurgerFrame.Position = UDim2.new(0, 10, 0.5, 80) -- Pindah ke kiri
 BurgerFrame.BackgroundColor3 = Color3.fromRGB(255, 105, 180) 
 BurgerFrame.Text = "TP"
+BurgerFrame.Font = Enum.Font.GothamBlack
 BurgerFrame.TextColor3 = Color3.new(1, 1, 1)
-BurgerFrame.TextSize = 22
+BurgerFrame.TextSize = 30
 BurgerFrame.Visible = false 
 BurgerFrame.Draggable = true 
 BurgerFrame.Active = true
 Instance.new("UICorner", BurgerFrame).CornerRadius = UDim.new(1, 0)
 
 ----------------------------------------------------------------
--- MAIN FRAME
+-- MAIN FRAME (SIDEBAR MODE: 25% Lebar, 100% Tinggi, KIRI)
 ----------------------------------------------------------------
 local MainFrame = Instance.new("Frame", ScreenGui)
-MainFrame.Size = UDim2.new(0, 320, 0, 420)
-MainFrame.Position = UDim2.new(0.5, -160, 0.5, -210)
+MainFrame.Size = UDim2.new(0.50, 0, 1, 0) 
+MainFrame.Position = UDim2.new(0, 0, 0, 0) -- POSISI DI 0 (KIRI)
 MainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 MainFrame.Active = true
-MainFrame.Draggable = true 
-Instance.new("UICorner", MainFrame).CornerRadius = UDim.new(0, 8)
+MainFrame.BorderSizePixel = 0
+
+-- Border pembatas sekarang di sisi kanan MainFrame
+local Border = Instance.new("Frame", MainFrame)
+Border.Size = UDim2.new(0, 2, 1, 0)
+Border.Position = UDim2.new(1, -2, 0, 0)
+Border.BackgroundColor3 = Color3.fromRGB(255, 105, 180)
+Border.BorderSizePixel = 0
 
 -- HEADER
 local Header = Instance.new("Frame", MainFrame)
 Header.Size = UDim2.new(1, 0, 0, 32)
 Header.BackgroundColor3 = Color3.fromRGB(255, 105, 180)
-Instance.new("UICorner", Header).CornerRadius = UDim.new(0, 8)
 
 local Title = Instance.new("TextLabel", Header)
 Title.Size = UDim2.new(1, -70, 1, 0)
@@ -78,7 +84,7 @@ BurgerFrame.MouseButton1Click:Connect(function() MainFrame.Visible = true; Burge
 Close.MouseButton1Click:Connect(function() ScreenGui:Destroy() end)
 
 ----------------------------------------------------------------
--- STATUS BAR (DIKEMBALIKAN)
+-- STATUS BAR (Isi asli kamu)
 ----------------------------------------------------------------
 local StatusBar = Instance.new("Frame", MainFrame)
 StatusBar.Size = UDim2.new(1, -16, 0, 22)
@@ -90,24 +96,34 @@ StatusLabel.Size = UDim2.new(1, 0, 1, 0)
 StatusLabel.BackgroundTransparency = 1
 StatusLabel.RichText = true 
 StatusLabel.Font = Enum.Font.GothamBold
-StatusLabel.TextSize = 9; StatusLabel.TextColor3 = Color3.new(1, 1, 1)
+StatusLabel.TextSize = 20; StatusLabel.TextColor3 = Color3.new(1, 1, 1)
 StatusLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 local function updateStatus()
     local allPlayers = Players:GetPlayers()
     local onlineFriends = 0
+    local velnirCount = 0
+    
     for _, p in ipairs(allPlayers) do
         if p ~= LocalPlayer then
             local success, isFriend = pcall(function() return LocalPlayer:IsFriendsWith(p.UserId) end)
             if success and isFriend then onlineFriends = onlineFriends + 1 end
+            
+            if p.Name:upper():find("VELNIR") or p.DisplayName:upper():find("VELNIR") then
+                velnirCount = velnirCount + 1
+            end
         end
     end
+    
+    -- Hitung Others (Total dikurangi diri sendiri, teman, dan pemain VELNIR yang bukan teman)
+    -- Namun biasanya Others dihitung sebagai pemain yang bukan Teman.
     local nonFriends = #allPlayers - onlineFriends - 1
-    StatusLabel.Text = string.format("👥 Total: <font color='#FFFF00'>%d</font>  |  🟢 Friends: <font color='#00FFFF'>%d</font>  |  ⚪ Others: <font color='#FFC0CB'>%d</font>", #allPlayers, onlineFriends, nonFriends)
+    
+    StatusLabel.Text = string.format("👥 Total: <font color='#FFFF00'>%d</font> | 🟢 Fr: <font color='#00FFFF'>%d</font> | 🔥 VEL: <font color='#FFA500'>%d</font> | ⚪ Oth: <font color='#FFC0CB'>%d</font>", #allPlayers, onlineFriends, velnirCount, nonFriends)
 end
 
 ----------------------------------------------------------------
--- SCROLLING LIST
+-- SCROLLING LIST (PRIORITY SORT)
 ----------------------------------------------------------------
 local Scrolling = Instance.new("ScrollingFrame", MainFrame)
 Scrolling.Size = UDim2.new(1, -16, 1, -195)
@@ -122,15 +138,24 @@ Layout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function() Scroll
 local function createPlayerRow(p)
     if p == LocalPlayer then return end
     local success, isFriend = pcall(function() return LocalPlayer:IsFriendsWith(p.UserId) end)
+    local isVelnir = p.Name:upper():find("VELNIR") or p.DisplayName:upper():find("VELNIR")
+    
     local Row = Instance.new("Frame", Scrolling)
     Row.Name = p.Name:lower(); Row.Size = UDim2.new(1, -4, 0, 60); Row.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-    Row.LayoutOrder = (success and isFriend) and 0 or 1
+    
+    -- Priority: VELNIR (-2), Friend (-1), Others (1)
+    Row.LayoutOrder = (isVelnir and -2) or (isFriend and -1) or 1
     Instance.new("UICorner", Row); Row:SetAttribute("DisplayName", p.DisplayName:lower())
 
     local DNLabel = Instance.new("TextLabel", Row)
     DNLabel.Size = UDim2.new(0.6, 0, 0, 15); DNLabel.Position = UDim2.new(0, 8, 0, 6); DNLabel.BackgroundTransparency = 1; DNLabel.RichText = true
-    DNLabel.Text = ((success and isFriend) and "<font color='#FFD700'>👑 </font>" or "") .. p.DisplayName
-    DNLabel.TextColor3 = (success and isFriend) and Color3.fromRGB(0, 255, 255) or Color3.fromRGB(255, 105, 180)
+    
+    local tags = ""
+    if isFriend then tags = "<font color='#FFD700'>👑 </font>" end
+    if isVelnir then tags = tags .. "<font color='#FFA500'>[VEL] </font>" end
+    
+    DNLabel.Text = tags .. p.DisplayName
+    DNLabel.TextColor3 = isVelnir and Color3.fromRGB(255, 165, 0) or (isFriend and Color3.fromRGB(0, 255, 255) or Color3.fromRGB(255, 105, 180))
     DNLabel.Font = Enum.Font.GothamBold; DNLabel.TextSize = 11; DNLabel.TextXAlignment = Enum.TextXAlignment.Left
 
     local UNBtn = Instance.new("TextButton", Row)
@@ -155,30 +180,59 @@ local function createPlayerRow(p)
 end
 
 ----------------------------------------------------------------
--- INPUT COORD & SEARCH
+-- BOTTOM CONTROLS
 ----------------------------------------------------------------
 local CoordFrame = Instance.new("Frame", MainFrame)
 CoordFrame.Size = UDim2.new(1, -16, 0, 30); CoordFrame.Position = UDim2.new(0, 8, 1, -115); CoordFrame.BackgroundTransparency = 1
 local CoordInput = Instance.new("TextBox", CoordFrame)
-CoordInput.Size = UDim2.new(0.75, -5, 1, 0); CoordInput.PlaceholderText = "X, Y, Z (e.g. -48, 117, 77)"; CoordInput.BackgroundColor3 = Color3.fromRGB(25, 25, 25); CoordInput.TextColor3 = Color3.new(1, 1, 1); CoordInput.Font = Enum.Font.Gotham; CoordInput.TextSize = 10; Instance.new("UICorner", CoordInput)
+CoordInput.Size = UDim2.new(0.75, -5, 1, 0); 
+CoordInput.PlaceholderText = "X, Y, Z (e.g. 3,54,-202)"; 
+CoordInput.Text = "3,54,-202"; 
+CoordInput.BackgroundColor3 = Color3.fromRGB(25, 25, 25); 
+CoordInput.TextColor3 = Color3.new(1, 1, 1); CoordInput.Font = Enum.Font.Gotham; 
+CoordInput.TextSize = 10; Instance.new("UICorner", CoordInput)
+
 local GoBtn = Instance.new("TextButton", CoordFrame)
-GoBtn.Size = UDim2.new(0.25, 0, 1, 0); GoBtn.Position = UDim2.new(0.75, 0, 0, 0); GoBtn.Text = "GO"; GoBtn.BackgroundColor3 = Color3.fromRGB(255, 105, 180); GoBtn.TextColor3 = Color3.new(1, 1, 1); GoBtn.Font = Enum.Font.GothamBlack; Instance.new("UICorner", GoBtn)
+GoBtn.Size = UDim2.new(0.25, 0, 1, 0); 
+GoBtn.Position = UDim2.new(0.75, 0, 0, 0); 
+GoBtn.Text = "GO"; 
+GoBtn.BackgroundColor3 = Color3.fromRGB(255, 105, 180); 
+GoBtn.TextColor3 = Color3.new(1, 1, 1); 
+GoBtn.Font = Enum.Font.GothamBlack; Instance.new("UICorner", GoBtn)
 
 GoBtn.MouseButton1Click:Connect(function()
     local coords = {}
     for word in string.gmatch(CoordInput.Text, "([^,%s]+)") do table.insert(coords, tonumber(word)) end
-    if #coords >= 3 and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(coords[1], coords[2], coords[3]) end
+    if #coords >= 3 and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then 
+        LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(coords[1], coords[2], coords[3]) 
+    end
 end)
 
 local SearchBar = Instance.new("TextBox", MainFrame)
-SearchBar.Size = UDim2.new(1, -16, 0, 30); SearchBar.Position = UDim2.new(0, 8, 1, -78); SearchBar.PlaceholderText = "🔍 Search player..."; SearchBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25); SearchBar.TextColor3 = Color3.new(1, 1, 1); SearchBar.Font = Enum.Font.Gotham; Instance.new("UICorner", SearchBar)
+SearchBar.Size = UDim2.new(1, -16, 0, 30); 
+SearchBar.Position = UDim2.new(0, 8, 1, -78); 
+SearchBar.PlaceholderText = "🔍 Search player..."; 
+SearchBar.Text = ""; 
+SearchBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25); 
+SearchBar.TextColor3 = Color3.new(1, 1, 1); SearchBar.Font = Enum.Font.Gotham; 
+Instance.new("UICorner", SearchBar)
+
 local ResetBtn = Instance.new("TextButton", MainFrame)
-ResetBtn.Size = UDim2.new(1, -16, 0, 30); ResetBtn.Position = UDim2.new(0, 8, 1, -40); ResetBtn.Text = "RESET CAMERA"; ResetBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50); ResetBtn.TextColor3 = Color3.new(1, 1, 1); ResetBtn.Font = Enum.Font.GothamBold; Instance.new("UICorner", ResetBtn)
+ResetBtn.Size = UDim2.new(1, -16, 0, 30); 
+ResetBtn.Position = UDim2.new(0, 8, 1, -40); 
+ResetBtn.Text = "RESET CAMERA"; ResetBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50); 
+ResetBtn.TextColor3 = Color3.new(1, 1, 1); ResetBtn.Font = Enum.Font.GothamBold; 
+Instance.new("UICorner", ResetBtn)
 
 SearchBar:GetPropertyChangedSignal("Text"):Connect(function()
     local st = SearchBar.Text:lower()
-    for _, item in ipairs(Scrolling:GetChildren()) do if item:IsA("Frame") then item.Visible = item.Name:find(st) or (item:GetAttribute("DisplayName") or ""):find(st) end end
+    for _, item in ipairs(Scrolling:GetChildren()) do 
+        if item:IsA("Frame") then 
+            item.Visible = item.Name:find(st) or (item:GetAttribute("DisplayName") or ""):find(st) 
+        end 
+    end
 end)
+
 ResetBtn.MouseButton1Click:Connect(function() if LocalPlayer.Character:FindFirstChild("Humanoid") then workspace.CurrentCamera.CameraSubject = LocalPlayer.Character.Humanoid end end)
 
 local function updateAll()
