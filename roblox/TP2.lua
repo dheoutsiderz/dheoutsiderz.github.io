@@ -96,7 +96,7 @@ StatusLabel.Size = UDim2.new(1, 0, 1, 0)
 StatusLabel.BackgroundTransparency = 1
 StatusLabel.RichText = true 
 StatusLabel.Font = Enum.Font.GothamBold
-StatusLabel.TextSize = 20; StatusLabel.TextColor3 = Color3.new(1, 1, 1)
+StatusLabel.TextSize = 12; StatusLabel.TextColor3 = Color3.new(1, 1, 1)
 StatusLabel.TextXAlignment = Enum.TextXAlignment.Center
 
 local function updateStatus()
