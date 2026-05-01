@@ -52,6 +52,8 @@ local MapsData = {
 			{name="Spot Atas Pohon", pos=Vector3.new(1227, 26, 2734)},
 			{name="Spot Pizza", pos=Vector3.new(1315, 14, 2697)},
 			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
+			{name="Spot OG Snail", pos=Vector3.new(1502, 129, 2809)},
+			{name="Spot Puncak", pos=Vector3.new(1502, 129, 2809)},
 			{name="Claime Parkur", pos=Vector3.new(1512, 144, 2847)},
         }
     },
