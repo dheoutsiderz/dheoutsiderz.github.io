@@ -330,17 +330,27 @@ local MapsData = {
 -- UI STRUCTURE
 -----------------------------------------------------------
 local openBtn = Instance.new("TextButton", sg)
-openBtn.Size = UDim2.fromOffset(45, 45); openBtn.Position = UDim2.new(0, 10, 0.5, -22); openBtn.BackgroundColor3 = Color3.fromRGB(60, 0, 0); openBtn.Text = "TP"; openBtn.TextColor3 = Color3.new(1, 1, 1); openBtn.Font = "GothamBlack"; openBtn.TextSize = 16; openBtn.Visible = false; createCorner(openBtn, 22)
+openBtn.Size = UDim2.fromOffset(45, 45); 
+openBtn.Position = UDim2.new(0, 10, 0.5, 80); 
+openBtn.BackgroundColor3 = Color3.fromRGB(60, 0, 0); 
+openBtn.Text = "TP"; openBtn.TextColor3 = Color3.new(1, 1, 1); 
+openBtn.Font = "GothamBlack"; openBtn.TextSize = 30; 
+openBtn.Draggable = true; 
+openBtn.Visible = false; 
+createCorner(openBtn, 22)
 
 local main = Instance.new("Frame", sg)
-main.Size = UDim2.new(0.25, 0, 1, 0); main.BackgroundColor3 = Color3.fromRGB(20, 0, 0); main.BorderSizePixel = 0
+main.Size = UDim2.new(0.50, 0, 1, 0); 
+main.BackgroundColor3 = Color3.fromRGB(20, 0, 0); 
+main.BorderSizePixel = 0
 
 -- Header
 local header = Instance.new("Frame", main); header.Size = UDim2.new(1, 0, 0, 50); header.BackgroundTransparency = 1
-local title = Instance.new("TextLabel", header); title.Size = UDim2.new(1, -90, 1, 0); title.Position = UDim2.new(0, 15, 0, 0); title.Text = "VELNIR TP"; title.TextColor3 = Color3.new(1, 1, 1); title.Font = "GothamBlack"; title.TextSize = 16; title.TextXAlignment = "Left"; title.BackgroundTransparency = 1
+local title = Instance.new("TextLabel", header); title.Size = UDim2.new(1, -90, 1, 0); title.Position = UDim2.new(0, 15, 0, 0); 
+title.Text = "TELEPORT MAP V.1"; title.TextColor3 = Color3.new(1, 1, 1); title.Font = "GothamBlack"; title.TextSize = 16; title.TextXAlignment = "Left"; title.BackgroundTransparency = 1
 
-local minBtn = Instance.new("TextButton", header); minBtn.Size = UDim2.new(0, 32, 0, 32); minBtn.Position = UDim2.new(1, -78, 0.5, -16); minBtn.Text = "_"; minBtn.BackgroundColor3 = Color3.fromRGB(45, 0, 0); minBtn.TextColor3 = Color3.new(1, 1, 1); minBtn.Font = "GothamBold"; minBtn.TextSize = 20; createCorner(minBtn, 6)
-local closeBtn = Instance.new("TextButton", header); closeBtn.Size = UDim2.new(0, 32, 0, 32); closeBtn.Position = UDim2.new(1, -40, 0.5, -16); closeBtn.Text = "X"; closeBtn.BackgroundColor3 = Color3.fromRGB(160, 0, 0); closeBtn.TextColor3 = Color3.new(1, 1, 1); closeBtn.Font = "GothamBold"; closeBtn.TextSize = 15; createCorner(closeBtn, 6)
+local minBtn = Instance.new("TextButton", header); minBtn.Size = UDim2.new(0, 32, 0, 32); minBtn.Position = UDim2.new(1, -78, 0.5, -16); minBtn.Text = "━"; minBtn.BackgroundColor3 = Color3.fromRGB(45, 0, 0); minBtn.TextColor3 = Color3.new(1, 1, 1); minBtn.Font = "GothamBold"; minBtn.TextSize = 20; createCorner(minBtn, 6)
+local closeBtn = Instance.new("TextButton", header); closeBtn.Size = UDim2.new(0, 32, 0, 32); closeBtn.Position = UDim2.new(1, -40, 0.5, -16); closeBtn.Text = "✖"; closeBtn.BackgroundColor3 = Color3.fromRGB(160, 0, 0); closeBtn.TextColor3 = Color3.new(1, 1, 1); closeBtn.Font = "GothamBold"; closeBtn.TextSize = 15; createCorner(closeBtn, 6)
 
 minBtn.MouseButton1Click:Connect(function() main.Visible = false; openBtn.Visible = true end)
 openBtn.MouseButton1Click:Connect(function() main.Visible = true; openBtn.Visible = false end)
@@ -350,13 +360,17 @@ closeBtn.MouseButton1Click:Connect(function() sg:Destroy() end)
 -- SCROLL AREAS
 -----------------------------------------------------------
 -- Atas: Dropdown Maps
-local scrollMaps = Instance.new("ScrollingFrame", main); scrollMaps.Size = UDim2.new(1, 0, 1, -270); scrollMaps.Position = UDim2.new(0, 0, 0, 55); scrollMaps.BackgroundTransparency = 1; scrollMaps.ScrollBarThickness = 2
-local layoutMaps = Instance.new("UIListLayout", scrollMaps); layoutMaps.Padding = UDim.new(0, 8); layoutMaps.HorizontalAlignment = "Center"
+local scrollMaps = Instance.new("ScrollingFrame", main); scrollMaps.Size = UDim2.new(1, 0, 1, -270); 
+scrollMaps.Position = UDim2.new(0, 0, 0, 55); 
+scrollMaps.BackgroundTransparency = 1; 
+scrollMaps.ScrollBarThickness = 2
+local layoutMaps = Instance.new("UIListLayout", 
+scrollMaps); layoutMaps.Padding = UDim.new(0, 2); layoutMaps.HorizontalAlignment = "Center"
 
 -- Bawah: Footer (Manual & Save)
 local footer = Instance.new("Frame", main); footer.Size = UDim2.new(1, 0, 0, 210); footer.Position = UDim2.new(0, 0, 1, -210); footer.BackgroundColor3 = Color3.fromRGB(30, 0, 0)
 
-local box = Instance.new("TextBox", footer); box.Size = UDim2.new(0.7, -15, 0, 38); box.Position = UDim2.new(0, 10, 0, 10); box.PlaceholderText = "X, Y, Z"; box.BackgroundColor3 = Color3.fromRGB(15, 0, 0); box.TextColor3 = Color3.new(1, 1, 1); box.TextSize = 14; createCorner(box)
+local box = Instance.new("TextBox", footer); box.Size = UDim2.new(0.7, -15, 0, 38); box.Position = UDim2.new(0, 10, 0, 10); box.Text = ""; box.PlaceholderText = "X, Y, Z"; box.BackgroundColor3 = Color3.fromRGB(15, 0, 0); box.TextColor3 = Color3.new(1, 1, 1); box.TextSize = 14; createCorner(box)
 local go = Instance.new("TextButton", footer); go.Size = UDim2.new(0.3, -10, 0, 38); go.Position = UDim2.new(0.7, 0, 0, 10); go.Text = "TP"; go.BackgroundColor3 = Color3.fromRGB(110, 0, 0); go.TextColor3 = Color3.new(1, 1, 1); go.TextSize = 15; go.Font = "GothamBold"; createCorner(go)
 
 local saveBtn = Instance.new("TextButton", footer); saveBtn.Size = UDim2.new(1, -20, 0, 40); saveBtn.Position = UDim2.new(0, 10, 0, 55); saveBtn.Text = "📍 SAVE CURRENT POS"; saveBtn.BackgroundColor3 = Color3.fromRGB(0, 110, 0); saveBtn.TextColor3 = Color3.new(1, 1, 1); saveBtn.Font = "GothamBold"; saveBtn.TextSize = 14; createCorner(saveBtn)
@@ -389,14 +403,33 @@ local function createMapDrop(name, data)
 end
 
 local function createSavedCard(name, pos)
-    local card = Instance.new("Frame", scrollSaved); card.Size = UDim2.new(1, -10, 0, 35); card.BackgroundColor3 = Color3.fromRGB(45, 55, 45); createCorner(card, 5)
-    local lbl = Instance.new("TextLabel", card); lbl.Size = UDim2.new(0.4, 0, 1, 0); lbl.Position = UDim2.new(0, 8, 0, 0); lbl.Text = name; lbl.TextColor3 = Color3.new(1,1,1); lbl.Font = "GothamBold"; lbl.TextSize = 9; lbl.BackgroundTransparency = 1; lbl.TextXAlignment = "Left"
+    local card = Instance.new("Frame", scrollSaved); 
+	card.Size = UDim2.new(1, -10, 0, 35); 
+	card.BackgroundColor3 = Color3.fromRGB(45, 55, 45); 
+	createCorner(card, 5)
+    local lbl = Instance.new("TextLabel", card); 
+	lbl.Size = UDim2.new(0.4, 0, 1, 0); 
+	lbl.Position = UDim2.new(0, 8, 0, 0); 
+	lbl.Text = name; lbl.TextColor3 = Color3.new(1,1,1); 
+	lbl.Font = "GothamBold"; 
+	lbl.TextSize = 20; 
+	lbl.BackgroundTransparency = 1; lbl.TextXAlignment = "Left"
     
-    local btnArea = Instance.new("Frame", card); btnArea.Size = UDim2.new(0.6, 0, 1, 0); btnArea.Position = UDim2.new(0.4, 0, 0, 0); btnArea.BackgroundTransparency = 1
-    local bl = Instance.new("UIListLayout", btnArea); bl.FillDirection = "Horizontal"; bl.HorizontalAlignment = "Right"; bl.VerticalAlignment = "Center"; bl.Padding = UDim.new(0, 3)
+    local btnArea = Instance.new("Frame", card); 
+	btnArea.Size = UDim2.new(0.6, 0, 1, 0); 
+	btnArea.Position = UDim2.new(0.4, 0, 0, 0); 
+	btnArea.BackgroundTransparency = 1
+    local bl = Instance.new("UIListLayout", 
+	btnArea); bl.FillDirection = "Horizontal"; 
+	bl.HorizontalAlignment = "Right"; 
+	bl.VerticalAlignment = "Center"; bl.Padding = UDim.new(0, 3)
 
     local function mk(t, c, f)
-        local b = Instance.new("TextButton", btnArea); b.Size = UDim2.new(0, 35, 0, 24); b.Text = t; b.BackgroundColor3 = c; b.TextColor3 = Color3.new(1,1,1); b.Font = "GothamBold"; b.TextSize = 9; createCorner(b, 4)
+        local b = Instance.new("TextButton", 
+		btnArea); b.Size = UDim2.new(0, 35, 0, 24); 
+		b.Text = t; b.BackgroundColor3 = c; 
+		b.TextColor3 = Color3.new(1,1,1); 
+		b.Font = "GothamBold"; b.TextSize = 10; createCorner(b, 4)
         b.MouseButton1Click:Connect(function() f(b) end)
     end
     
@@ -419,7 +452,7 @@ saveBtn.MouseButton1Click:Connect(function()
     local hrp = LP.Character and LP.Character:FindFirstChild("HumanoidRootPart")
     if hrp then
         local pos = hrp.Position
-        local n = "Pos: "..math.floor(pos.X)..","..math.floor(pos.Z)
+        local n = "Pos: "..math.floor(pos.X)..", "..math.floor(pos.Y)..", "..math.floor(pos.Z)
         if not _G.TelePositions[n] then
             _G.TelePositions[n] = pos
             createSavedCard(n, pos)
