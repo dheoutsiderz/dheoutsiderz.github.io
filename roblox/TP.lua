@@ -54,6 +54,9 @@ local MapsData = {
 			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
 			{name="Spot OG Snail", pos=Vector3.new(1507, 138, 2790)},
 			{name="Spot Puncak", pos=Vector3.new(1502, 129, 2809)},
+			{name="Buka Iron Cafe", pos=Vector3.new(1569, -1132, 2823)},
+			{name="Pintu Iron Cafe", pos=Vector3.new(1475, -1113, 2712)},
+			{name="Iron Cafe", pos=Vector3.new(1474, -1111, 2580)},
 			{name="Claime Parkur", pos=Vector3.new(1512, 144, 2847)},
         }
     },
