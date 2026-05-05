@@ -48,7 +48,7 @@ local MapsData = {
 			{name="Classic Machine", pos=Vector3.new(1321, 48, 2759)},
 			{name="Jhon doe NPC", pos=Vector3.new(11321, 48, 2759)},
 			{name="Jembatan", pos=Vector3.new(1405, 63, 2869)},
-			{name="Spot 1", pos=Vector3.new(1405, 63, 2869)},
+			{name="Spot 1", pos=Vector3.new(1421, 55, 2834)},
 			{name="Spot Atas Pohon", pos=Vector3.new(1227, 26, 2734)},
 			{name="Spot Pizza", pos=Vector3.new(1315, 14, 2697)},
 			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
