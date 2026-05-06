@@ -53,7 +53,7 @@ local MapsData = {
 			{name="Spot Pizza", pos=Vector3.new(1315, 14, 2697)},
 			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
 			{name="Spot OG Snail", pos=Vector3.new(1507, 138, 2790)},
-			{name="Spot Puncak", pos=Vector3.new(1502, 129, 2809)},
+			{name="Spot Puncak", pos=Vector3.new(1547, 243, 2803)},
 			{name="Buka Iron Cafe", pos=Vector3.new(1569, -1132, 2823)},
 			{name="Pintu Iron Cafe", pos=Vector3.new(1475, -1113, 2712)},
 			{name="Iron Cafe", pos=Vector3.new(1474, -1111, 2580)},
@@ -327,6 +327,25 @@ local MapsData = {
 			{name="CP 09", pos=Vector3.new(985, 1756, -10378)},
 			{name="CP 10", pos=Vector3.new(1333, 2076, -11407)},
 			{name="Summit", pos=Vector3.new(671, 2481, -12277)},
+        }
+    },
+	{
+        name = "Bungker",
+        spots = {
+            {name="Base", pos=Vector3.new(-9,32,-184)},
+			{name="Atas Bungker", pos=Vector3.new(3,54,-202)},
+            {name="Atas Tengah", pos=Vector3.new(-20,119,76)},
+			{name="Tengah Titan", pos=Vector3.new(-24,14,69)},
+			{name="Tembok POK", pos=Vector3.new(73,43,76)},
+			{name="Tengah Gazebo", pos=Vector3.new(-21,20,-11)},
+			{name="Atas Usergank", pos=Vector3.new(-25, 51, 4)},
+			{name="Usergank", pos=Vector3.new(-23, 20, 34)},
+			{name="Atas POK", pos=Vector3.new(52, 51, 74)},
+			{name="POK", pos=Vector3.new(34, 20, 77)},
+			{name="Atas Val", pos=Vector3.new(-100, 51, 80)},
+			{name="Val", pos=Vector3.new(-83, 20, 77)},
+			{name="Atas Balik Layar", pos=Vector3.new(-22, 51, 135)},
+			{name="Balik Layar", pos=Vector3.new(-22, 20, 153)},
         }
     },
 }
