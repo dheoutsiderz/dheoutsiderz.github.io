@@ -49,6 +49,7 @@ local MapsData = {
 			{name="Jhon doe NPC", pos=Vector3.new(11321, 48, 2759)},
 			{name="Jembatan", pos=Vector3.new(1405, 63, 2869)},
 			{name="Spot 1", pos=Vector3.new(1421, 55, 2834)},
+			{name="Spot Duduk", pos=Vector3.new(1301, 6, 2890)},
 			{name="Spot Atas Pohon", pos=Vector3.new(1227, 26, 2734)},
 			{name="Spot Pizza", pos=Vector3.new(1315, 14, 2697)},
 			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
