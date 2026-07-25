@@ -19,10 +19,10 @@ end
 -----------------------------------------------------------
 -- DATA MAPS (DARI SCRIPT KAMU)
 -----------------------------------------------------------
-local MapsData = {
-     {
+{
         name = "!My Spot",
         spots = {
+			{name="Spot Puggy", pos=Vector3.new(1478, 1, -442)},
             {name="Spot DINO RUIN", pos=Vector3.new(6097,-586,4663)},
             {name="Spot MAJA 1 RUIN", pos=Vector3.new(6020,-586,4627)},
             {name="Spot Maja 2 RUIN", pos=Vector3.new(6030,-557,4564)},
@@ -39,26 +39,40 @@ local MapsData = {
         }
     },
 	{
-        name = "Classic Island",
+        name = "Cooper Canyon",
         spots = {
-            {name="Jual Ikan", pos=Vector3.new(1293, 14, 2795)},
-            {name="Pizza Man NPC", pos=Vector3.new(1240, 11, 2771)},
-			{name="Party Wizard NPC", pos=Vector3.new(1269, 11, 2789)},
-			{name="Charm Boombox", pos=Vector3.new(1291, 11, 2824)},
-			{name="Classic Machine", pos=Vector3.new(1321, 48, 2759)},
-			{name="Jhon doe NPC", pos=Vector3.new(11321, 48, 2759)},
-			{name="Jembatan", pos=Vector3.new(1405, 63, 2869)},
-			{name="Spot 1", pos=Vector3.new(1421, 55, 2834)},
-			{name="Spot Duduk", pos=Vector3.new(1301, 6, 2890)},
-			{name="Spot Atas Pohon", pos=Vector3.new(1227, 26, 2734)},
-			{name="Spot Pizza", pos=Vector3.new(1315, 14, 2697)},
-			{name="Spot Kotak", pos=Vector3.new(1342, 5, 2894)},
-			{name="Spot OG Snail", pos=Vector3.new(1507, 138, 2790)},
-			{name="Spot Puncak", pos=Vector3.new(1547, 243, 2803)},
-			{name="Buka Iron Cafe", pos=Vector3.new(1569, -1132, 2823)},
-			{name="Pintu Iron Cafe", pos=Vector3.new(1475, -1113, 2712)},
-			{name="Iron Cafe", pos=Vector3.new(1474, -1111, 2580)},
-			{name="Claime Parkur", pos=Vector3.new(1512, 144, 2847)},
+            {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
+            {name="NPC WR Stone ", pos=Vector3.new(-4270, 24, 717)},
+			{name="NPC Sell Fish", pos=Vector3.new(-4239, 21, 685)},
+			{name="NPC Clara PETS", pos=Vector3.new(-4288, 23, 652)},
+			{name="NPC Outlaws", pos=Vector3.new(-4123, 8, 423)},
+			{name="NPC Prospector", pos=Vector3.new(-4227, 60, 400)},
+			{name="Spot 1 atas", pos=Vector3.new(-4193, 60, 432)},
+			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
+        }
+    },
+{
+        name = "Cooper Canyon Mines",
+        spots = {
+            {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
+            {name="NPC Nerveous", pos=Vector3.new(-4082, -548, 550)},
+			{name="NPC Null Crafting", pos=Vector3.new(-4057, -550, 476)},
+			{name="Atas Pengait", pos=Vector3.new(-4036, -520, 555)},
+			{name="Atas pengait", pos=Vector3.new(-4039, -539, 552)},
+			{name="Spot 1 WR", pos=Vector3.new(-4135, -555, 552)},
+			{name="Spot 2 WR", pos=Vector3.new(-4011, -548, 544)}
+        }
+    },
+	{
+        name = "Mariana Trench",
+        spots = {
+			{name="Mariana Trench", pos=Vector3.new(-9276, -241, -86)},
+            {name="Lucky Volcano 1", pos=Vector3.new(-8571, -70, -428)},
+            {name="Lucky Volcano 2", pos=Vector3.new(-8644, -50, -274)},
+			{name="rushing current", pos=Vector3.new(-9709, -75, -1731)},
+			{name="mutation Vent", pos=Vector3.new(-9225, -92, -1578)},
+			{name="Lucky Abbys", pos=Vector3.new(9119, -270, 901)},
+			{name="Shiny Abbys", pos=Vector3.new(-9752, -270, 791)}
         }
     },
 {
