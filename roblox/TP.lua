@@ -19,7 +19,8 @@ end
 -----------------------------------------------------------
 -- DATA MAPS (DARI SCRIPT KAMU)
 -----------------------------------------------------------
-{
+local MapsData = {
+     {
         name = "!My Spot",
         spots = {
 			{name="Spot Puggy", pos=Vector3.new(1478, 1, -442)},
@@ -51,7 +52,7 @@ end
 			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
         }
     },
-	{
+{
         name = "Cooper Canyon Mines",
         spots = {
             {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
@@ -75,8 +76,19 @@ end
 			{name="Shiny Abbys", pos=Vector3.new(-9752, -270, 791)}
         }
     },
-
-        {
+{
+        name = "Esoterik",
+        spots = {
+            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
+            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
+            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
+            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
+            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
+            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+        }
+    },
+	{
         name = "Underwater City",
         spots = {
 			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
@@ -92,6 +104,7 @@ end
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
+
 	{
         name = "Planet Observatory",
         spots = {
@@ -123,19 +136,6 @@ end
 			
         }
     },
-	{
-        name = "Esoterik",
-        spots = {
-            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
-            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
-            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
-            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
-            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
-            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
-        }
-    },
-
 	{
         name = "ThunderZilla",
         spots = {
@@ -361,26 +361,8 @@ end
 			{name="Summit", pos=Vector3.new(671, 2481, -12277)},
         }
     },
-	{
-        name = "Bungker",
-        spots = {
-            {name="Base", pos=Vector3.new(-9,32,-184)},
-			{name="Atas Bungker", pos=Vector3.new(3,54,-202)},
-            {name="Atas Tengah", pos=Vector3.new(-20,119,76)},
-			{name="Tengah Titan", pos=Vector3.new(-24,14,69)},
-			{name="Tembok POK", pos=Vector3.new(73,43,76)},
-			{name="Tengah Gazebo", pos=Vector3.new(-21,20,-11)},
-			{name="Atas Usergank", pos=Vector3.new(-25, 51, 4)},
-			{name="Usergank", pos=Vector3.new(-23, 20, 34)},
-			{name="Atas POK", pos=Vector3.new(52, 51, 74)},
-			{name="POK", pos=Vector3.new(34, 20, 77)},
-			{name="Atas Val", pos=Vector3.new(-100, 51, 80)},
-			{name="Val", pos=Vector3.new(-83, 20, 77)},
-			{name="Atas Balik Layar", pos=Vector3.new(-22, 51, 135)},
-			{name="Balik Layar", pos=Vector3.new(-22, 20, 153)},
-        }
-    },
 }
+
 
 -----------------------------------------------------------
 -- UI STRUCTURE
