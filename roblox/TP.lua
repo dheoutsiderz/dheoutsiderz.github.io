@@ -75,16 +75,19 @@ end
 			{name="Shiny Abbys", pos=Vector3.new(-9752, -270, 791)}
         }
     },
-{
-        name = "Esoterik",
+
+        name = "Underwater City",
         spots = {
-            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
-            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
-            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
-            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
-            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
-            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
+			{name="Atas Atlantis Machine", pos=Vector3.new(-3165, -624, -10449)},
+			{name="Tengah Tengah", pos=Vector3.new(-3143, -644, -10412)},
+			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
+			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
+			{name="Spot 2 Pipa", pos=Vector3.new(-3092, -640, -10475)},
+			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
+			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
+			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
+			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
 
@@ -119,6 +122,19 @@ end
 			
         }
     },
+{
+        name = "Esoterik",
+        spots = {
+            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
+            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
+            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
+            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
+            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
+            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+        }
+    },
+{
 	{
         name = "ThunderZilla",
         spots = {
