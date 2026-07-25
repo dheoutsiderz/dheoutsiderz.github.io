@@ -51,7 +51,7 @@ end
 			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
         }
     },
-{
+	{
         name = "Cooper Canyon Mines",
         spots = {
             {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
@@ -76,10 +76,12 @@ end
         }
     },
 
+        {
         name = "Underwater City",
         spots = {
 			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
 			{name="Atas Atlantis Machine", pos=Vector3.new(-3165, -624, -10449)},
+			{name="Spot Runic", pos=Vector3.new(-3143, -644, -10450)},
 			{name="Tengah Tengah", pos=Vector3.new(-3143, -644, -10412)},
 			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
 			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
@@ -90,7 +92,6 @@ end
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
-
 	{
         name = "Planet Observatory",
         spots = {
@@ -122,7 +123,7 @@ end
 			
         }
     },
-{
+	{
         name = "Esoterik",
         spots = {
             {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
@@ -134,7 +135,7 @@ end
             {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
         }
     },
-{
+
 	{
         name = "ThunderZilla",
         spots = {
