@@ -40,6 +40,17 @@ local MapsData = {
         }
     },
 	{
+        name = "Starfall Garden",
+        spots = {
+            {name="Starfall Garden", pos=Vector3.new(-22231, -249, -8101)},
+            {name="Sell Fish & Charm", pos=Vector3.new(-22216, -253, -8052)},
+			{name="NPC Mayor Starfall", pos=Vector3.new(-22249, -253, -8049)},
+			{name="NPC Grandma Starla", pos=Vector3.new(-22208, -253, -7984)},
+			{name="Spot 1 Secret", pos=Vector3.new(-22197, -253, -7990)}
+			
+        }
+    },
+	{
         name = "Cooper Canyon",
         spots = {
             {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
