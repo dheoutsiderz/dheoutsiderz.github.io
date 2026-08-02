@@ -54,6 +54,7 @@ local MapsData = {
 	{
         name = "The Celestarium",
         spots = {
+			{name="The Celestarium", pos=Vector3.new(-28378, -154, -8299)},
             {name="star machine", pos=Vector3.new(-28379, -155, -8135)},
 			{name="SPOT 1", pos=Vector3.new(-28377, -162, -8256)},
 			{name="SPOT 2", pos=Vector3.new(-28344, -162, -8194)}
