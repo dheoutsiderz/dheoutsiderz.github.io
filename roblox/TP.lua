@@ -51,6 +51,15 @@ local MapsData = {
         }
     },
 	{
+        name = "The Celestarium",
+        spots = {
+            {name="star machine", pos=Vector3.new(-28379, -155, -8135)},
+			{name="SPOT 1", pos=Vector3.new(-28377, -162, -8256)},
+			{name="SPOT 2", pos=Vector3.new(-28344, -162, -8194)}
+			
+        }
+    },
+	{
         name = "Cooper Canyon",
         spots = {
             {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
