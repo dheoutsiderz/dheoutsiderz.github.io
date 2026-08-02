@@ -46,6 +46,7 @@ local MapsData = {
             {name="Sell Fish & Charm", pos=Vector3.new(-22216, -253, -8052)},
 			{name="NPC Mayor Starfall", pos=Vector3.new(-22249, -253, -8049)},
 			{name="NPC Grandma Starla", pos=Vector3.new(-22208, -253, -7984)},
+			{name="Claim Bobber", pos=Vector3.new(-21956, -237, -7971)},
 			{name="Spot 1 Secret", pos=Vector3.new(-22197, -253, -7990)}
 			
         }
