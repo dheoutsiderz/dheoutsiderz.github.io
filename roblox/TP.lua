@@ -91,6 +91,7 @@ local MapsData = {
         spots = {
 			{name="Mariana Trench", pos=Vector3.new(-9276, -241, -86)},
             {name="Silent Reach", pos=Vector3.new(-10010, -80, 40)},
+			{name="Spot Silent Reach", pos=Vector3.new(-9998, -65, 172)},
             {name="Lucky Volcano 2", pos=Vector3.new(-8644, -50, -274)},
 			{name="rushing current", pos=Vector3.new(-9709, -75, -1731)},
 			{name="mutation Vent", pos=Vector3.new(-9225, -92, -1578)},
