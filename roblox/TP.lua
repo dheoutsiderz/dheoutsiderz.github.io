@@ -43,7 +43,13 @@ local MapsData = {
         name = "Starfall Garden",
         spots = {
             {name="Starfall Garden", pos=Vector3.new(-22231, -249, -8101)},
-            {name="Sell Fish & Charm", pos=Vector3.new(-22216, -253, -8052)},
+			{name="Sell Fish & Charm", pos=Vector3.new(-22216, -253, -8052)},
+			{name="NPC Celestial Warlock", pos=Vector3.new(-22207, -249, -8125)},
+			{name="Misi Star 1", pos=Vector3.new(-22292, -253, -7989)},
+			{name="Misi Star 2", pos=Vector3.new(-22144, -231, -7844)},
+			{name="Misi Star 3", pos=Vector3.new(-22260, -249, -8158)},
+			{name="Misi Star 4", pos=Vector3.new(-22204, -248, -8078)},
+			{name="Misi Star 5", pos=Vector3.new(-28417, -161, -8267)},
 			{name="NPC Mayor Starfall", pos=Vector3.new(-22249, -253, -8049)},
 			{name="NPC Grandma Starla", pos=Vector3.new(-22208, -253, -7984)},
 			{name="Claim Bobber", pos=Vector3.new(-21956, -237, -7971)},
@@ -56,6 +62,7 @@ local MapsData = {
         spots = {
 			{name="The Celestarium", pos=Vector3.new(-28378, -154, -8299)},
             {name="star machine", pos=Vector3.new(-28379, -155, -8135)},
+			{name="NPC Azorath", pos=Vector3.new(-28398, -162, -8169)},
 			{name="SPOT 1", pos=Vector3.new(-28377, -162, -8256)},
 			{name="SPOT 2", pos=Vector3.new(-28344, -162, -8194)}
 			
