@@ -244,7 +244,7 @@ local MapsData = {
             {name="Spot Maja 6 Bawah", pos=Vector3.new(6044,-586,4715)},
             {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
         }
-    
+    },
     
     {
         name = "Corral Reff",
