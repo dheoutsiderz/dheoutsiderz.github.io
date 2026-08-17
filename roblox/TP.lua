@@ -39,7 +39,7 @@ local MapsData = {
             {name="Spot Lochness 3", pos=Vector3.new(-626,19,422)}
         }
     },
-	},
+	
 	    {
         name = "Pirate Cove",
         spots = {
