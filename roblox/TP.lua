@@ -39,6 +39,36 @@ local MapsData = {
             {name="Spot Lochness 3", pos=Vector3.new(-626,19,422)}
         }
     },
+	},
+	    {
+        name = "Pirate Cove",
+        spots = {
+            {name="Spot Leviatan", pos=Vector3.new(3422,4,3507)},
+            {name="Spot Mega 1", pos=Vector3.new(3398,4,3458)},
+            {name="Spot Mega 2", pos=Vector3.new(3390,8,3320)},
+            {name="Spot Batu", pos=Vector3.new(3398,10,3490)},
+            {name="Maze Room", pos=Vector3.new(3432,-300,3360)},
+			{name="Exchange Kraken", pos=Vector3.new(5698, -892, 15291)},
+			{name="Exchange Diary", pos=Vector3.new(5836, -895, 15329)},
+            {name="Pirate Treasure", pos=Vector3.new(3337,-300,3104)},
+			{name="Misi Rod Leviatan", pos=Vector3.new(3313, -299, 3002)},
+			{name="Goblin Shark", pos=Vector3.new(3356, -299, 3039)},
+            {name="Crystall Depth", pos=Vector3.new(5749,-905,15393)},
+            {name="Gran Maja", pos=Vector3.new(5638,-900,15352)},
+            {name="Cursed Kraken 1 (PC)", pos=Vector3.new(5639,-879,15396)},
+            {name="Cursed Kraken 2 (PC)", pos=Vector3.new(5685,-896,15327)},
+            {name="Cristalized 1", pos=Vector3.new(5830,-896,15346)},
+			{name="Cursed Kraken", pos=Vector3.new(5614, -904, 15344)},
+        }
+    },
+	{
+        name = "Gloomcamp Grotto",
+        spots = {
+            {name="Gloomcamp Grotto", pos=Vector3.new(5827, -861, 12328)},
+            {name="Sell Ikan", pos=Vector3.new(5987, -851, 12387)},
+			{name="Jembatan", pos=Vector3.new(5890, -867, 12292)}
+        }
+    },
 	{
         name = "Starfall Garden",
         spots = {
@@ -214,28 +244,7 @@ local MapsData = {
             {name="Spot Maja 6 Bawah", pos=Vector3.new(6044,-586,4715)},
             {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
         }
-    },
-	    {
-        name = "!Pirate Cove",
-        spots = {
-            {name="Spot Leviatan", pos=Vector3.new(3422,4,3507)},
-            {name="Spot Mega 1", pos=Vector3.new(3398,4,3458)},
-            {name="Spot Mega 2", pos=Vector3.new(3390,8,3320)},
-            {name="Spot Batu", pos=Vector3.new(3398,10,3490)},
-            {name="Maze Room", pos=Vector3.new(3432,-300,3360)},
-			{name="Exchange Kraken", pos=Vector3.new(5698, -892, 15291)},
-			{name="Exchange Diary", pos=Vector3.new(5836, -895, 15329)},
-            {name="Pirate Treasure", pos=Vector3.new(3337,-300,3104)},
-			{name="Misi Rod Leviatan", pos=Vector3.new(3313, -299, 3002)},
-			{name="Goblin Shark", pos=Vector3.new(3356, -299, 3039)},
-            {name="Crystall Depth", pos=Vector3.new(5749,-905,15393)},
-            {name="Gran Maja", pos=Vector3.new(5638,-900,15352)},
-            {name="Kraken 1 (PC)", pos=Vector3.new(5639,-879,15396)},
-            {name="Kraken 2 (PC)", pos=Vector3.new(5685,-896,15327)},
-            {name="Cristalized 1", pos=Vector3.new(5830,-896,15346)},
-			{name="Cursed Kraken", pos=Vector3.new(5614, -904, 15344)},
-        }
-    },
+    
     
     {
         name = "Corral Reff",
