@@ -39,6 +39,21 @@ local MapsData = {
             {name="Spot Lochness 3", pos=Vector3.new(-626,19,422)}
         }
     },
+	{
+        name = "Elemental Islan",
+        spots = {
+			{name="Elemental Islan", pos=Vector3.new(-665, 4, 5155)},
+            {name="Api 1", pos=Vector3.new(-723, 7, 5192)},
+			{name="Es 2", pos=Vector3.new(-808, 18, 5084)},
+			{name="Listrik 3", pos=Vector3.new(-897, 30, 5097)},
+			{name="NPC Jual Ikan", pos=Vector3.new(-886, 54, 5231)},
+			{name="NPC WR Bait", pos=Vector3.new(-888, 63, 5633)},
+			{name="NPC Fire Machine (ignis)", pos=Vector3.new(-618, 107, 5492)},
+			{name="NPC Cold Machine (boreas)", pos=Vector3.new(-1095, 124, 5542)},
+			{name="NPC Lightning Machine (Tempest)", pos=Vector3.new(-916, 85, 5560)},
+			
+        }
+    },
 	
 	    {
         name = "Pirate Cove",
