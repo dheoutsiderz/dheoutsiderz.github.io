@@ -40,9 +40,9 @@ local MapsData = {
         }
     },
 	{
-        name = "Elemental Islan",
+        name = "Elemental Island",
         spots = {
-			{name="Elemental Islan", pos=Vector3.new(-665, 4, 5155)},
+			{name="Elemental Island", pos=Vector3.new(-665, 4, 5155)},
             {name="Api 1", pos=Vector3.new(-723, 7, 5192)},
 			{name="Es 2", pos=Vector3.new(-808, 18, 5084)},
 			{name="Listrik 3", pos=Vector3.new(-897, 30, 5097)},
