@@ -51,10 +51,23 @@ local MapsData = {
 			{name="NPC Fire Machine (ignis)", pos=Vector3.new(-618, 107, 5492)},
 			{name="NPC Cold Machine (boreas)", pos=Vector3.new(-1095, 124, 5542)},
 			{name="NPC Lightning Machine (Tempest)", pos=Vector3.new(-916, 85, 5560)},
+			{name="Pintu Masuk Throne Room", pos=Vector3.new(-840, 115, 5722)},
 			
         }
     },
-	
+	{
+        name = "Throne Room",
+        spots = {
+			{name="Throne Room", pos=Vector3.new(-1240, -854, 5509)},
+            {name="Spot Api 1", pos=Vector3.new(-1274, -856, 5535)},
+			{name="Spot Api 2", pos=Vector3.new(-1335, -856, 5550)},
+			{name="Spot Tempest 1", pos=Vector3.new(-1351, -856, 5612)},
+			{name="Spot Tempest 2", pos=Vector3.new(-1351, -856, 5612)},
+			{name="Spot Es 1", pos=Vector3.new(-1248, -856, 5641)},
+			{name="Spot Es 2", pos=Vector3.new(-1229, -856, 5580)}
+			
+        }
+    },
 	    {
         name = "Pirate Cove",
         spots = {
