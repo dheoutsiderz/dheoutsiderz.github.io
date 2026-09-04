@@ -68,6 +68,48 @@ local MapsData = {
 			
         }
     },
+	{
+        name = "Cooper Canyon",
+        spots = {
+            {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
+            {name="NPC WR Stone ", pos=Vector3.new(-4270, 24, 717)},
+			{name="NPC Sell Fish", pos=Vector3.new(-4239, 21, 685)},
+			{name="NPC Clara PETS", pos=Vector3.new(-4288, 23, 652)},
+			{name="NPC Outlaws", pos=Vector3.new(-4123, 8, 423)},
+			{name="NPC Prospector", pos=Vector3.new(-4227, 60, 400)},
+			{name="Spot 1 atas", pos=Vector3.new(-4193, 60, 432)},
+			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
+        }
+    },
+{
+        name = "Cooper Canyon Mines",
+        spots = {
+            {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
+            {name="NPC Nerveous", pos=Vector3.new(-4082, -548, 550)},
+			{name="NPC Null Crafting", pos=Vector3.new(-4057, -550, 476)},
+			{name="Atas Pengait", pos=Vector3.new(-4036, -520, 555)},
+			{name="Atas pengait", pos=Vector3.new(-4039, -539, 552)},
+			{name="Spot 1 WR", pos=Vector3.new(-4135, -555, 552)},
+			{name="Spot 2 WR", pos=Vector3.new(-4011, -548, 544)}
+        }
+    },
+	{
+        name = "Underwater City",
+        spots = {
+			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
+			{name="Atas Atlantis Machine", pos=Vector3.new(-3165, -624, -10449)},
+			{name="Spot Runic", pos=Vector3.new(-3143, -644, -10450)},
+			{name="Tengah Tengah", pos=Vector3.new(-3143, -644, -10412)},
+			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
+			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
+			{name="Spot 2 Pipa", pos=Vector3.new(-3092, -640, -10475)},
+			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
+			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
+			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
+			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
+        }
+    },
+
 	    {
         name = "Pirate Cove",
         spots = {
@@ -126,31 +168,7 @@ local MapsData = {
 			
         }
     },
-	{
-        name = "Cooper Canyon",
-        spots = {
-            {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
-            {name="NPC WR Stone ", pos=Vector3.new(-4270, 24, 717)},
-			{name="NPC Sell Fish", pos=Vector3.new(-4239, 21, 685)},
-			{name="NPC Clara PETS", pos=Vector3.new(-4288, 23, 652)},
-			{name="NPC Outlaws", pos=Vector3.new(-4123, 8, 423)},
-			{name="NPC Prospector", pos=Vector3.new(-4227, 60, 400)},
-			{name="Spot 1 atas", pos=Vector3.new(-4193, 60, 432)},
-			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
-        }
-    },
-{
-        name = "Cooper Canyon Mines",
-        spots = {
-            {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
-            {name="NPC Nerveous", pos=Vector3.new(-4082, -548, 550)},
-			{name="NPC Null Crafting", pos=Vector3.new(-4057, -550, 476)},
-			{name="Atas Pengait", pos=Vector3.new(-4036, -520, 555)},
-			{name="Atas pengait", pos=Vector3.new(-4039, -539, 552)},
-			{name="Spot 1 WR", pos=Vector3.new(-4135, -555, 552)},
-			{name="Spot 2 WR", pos=Vector3.new(-4011, -548, 544)}
-        }
-    },
+	
 	{
         name = "Mariana Trench",
         spots = {
@@ -176,23 +194,7 @@ local MapsData = {
             {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
         }
     },
-	{
-        name = "Underwater City",
-        spots = {
-			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
-			{name="Atas Atlantis Machine", pos=Vector3.new(-3165, -624, -10449)},
-			{name="Spot Runic", pos=Vector3.new(-3143, -644, -10450)},
-			{name="Tengah Tengah", pos=Vector3.new(-3143, -644, -10412)},
-			{name="Jembatan Kiri", pos=Vector3.new(-3223, -637, -10320)},
-			{name="Lorong", pos=Vector3.new(-3116, -667, -10522)},
-			{name="Spot 2 Pipa", pos=Vector3.new(-3092, -640, -10475)},
-			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
-			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
-			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
-			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
-        }
-    },
-
+	
 	{
         name = "Planet Observatory",
         spots = {
