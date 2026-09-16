@@ -23,6 +23,7 @@ local MapsData = {
      {
         name = "!My Spot",
         spots = {
+			{name="Spot Everbloom", pos=Vector3.new(-598, 6, 543)},
 			{name="Spot Puggy", pos=Vector3.new(1478, 1, -442)},
             {name="Spot DINO RUIN", pos=Vector3.new(6097,-586,4663)},
             {name="Spot MAJA 1 RUIN", pos=Vector3.new(6020,-586,4627)},
@@ -110,7 +111,18 @@ local MapsData = {
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
         }
     },
-
+{
+        name = "Esoterik",
+        spots = {
+            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
+            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
+            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
+            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
+            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
+            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+        }
+    },
 	    {
         name = "Pirate Cove",
         spots = {
@@ -183,18 +195,7 @@ local MapsData = {
 			{name="Shiny Abbys", pos=Vector3.new(-9752, -270, 791)}
         }
     },
-{
-        name = "Esoterik",
-        spots = {
-            {name="esoterik Lift", pos=Vector3.new(2105,-27,1356)},
-            {name="Enchant Eso", pos=Vector3.new(3227,-1303,1403)},
-            {name="Spot 1 Eso", pos=Vector3.new(3186,-1303,1366)},
-            {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
-            {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
-            {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
-        }
-    },
+
 	
 	{
         name = "Planet Observatory",
