@@ -48,6 +48,7 @@ local MapsData = {
 			{name="Sell & Charm", pos=Vector3.new(1483, 13, 2964)},
 			{name="Arcade PAss", pos=Vector3.new(1318, 13, 29985)},
 			{name="Pellet Machine", pos=Vector3.new(1323, 13, 2977)},
+			{name="Claim Reward", pos=Vector3.new(1210, 83, 3036)},
         }
     },
 	{
