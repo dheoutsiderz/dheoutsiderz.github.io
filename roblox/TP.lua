@@ -41,6 +41,16 @@ local MapsData = {
         }
     },
 	{
+        name = "Arcadia",
+        spots = {
+            {name="Arcadia", pos=Vector3.new(1338, 7, 2933)},
+            {name="NPC Dexter", pos=Vector3.new(1356, 13, 2952)},
+			{name="Sell & Charm", pos=Vector3.new(1483, 13, 2964)},
+			{name="Arcade PAss", pos=Vector3.new(1318, 13, 29985)},
+			{name="Pellet Machine", pos=Vector3.new(1323, 13, 2977)},
+        }
+    },
+	{
         name = "Elemental Island",
         spots = {
 			{name="Elemental Island", pos=Vector3.new(-665, 4, 5155)},
@@ -83,6 +93,7 @@ local MapsData = {
 			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
         }
     },
+	
 {
         name = "Cooper Canyon Mines",
         spots = {
