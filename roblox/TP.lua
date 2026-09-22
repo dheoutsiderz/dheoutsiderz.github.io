@@ -52,6 +52,20 @@ local MapsData = {
         }
     },
 	{
+        name = "Throne Room",
+        spots = {
+			{name="Throne Room", pos=Vector3.new(-1240, -854, 5509)},
+			{name="Reroll Crafting", pos=Vector3.new(-1461, -839, 5628)},
+            {name="Spot Api 1", pos=Vector3.new(-1274, -856, 5535)},
+			{name="Spot Api 2", pos=Vector3.new(-1335, -856, 5550)},
+			{name="Spot Tempest 1", pos=Vector3.new(-1351, -856, 5612)},
+			{name="Spot Tempest 2", pos=Vector3.new(-1351, -856, 5612)},
+			{name="Spot Es 1", pos=Vector3.new(-1248, -856, 5641)},
+			{name="Spot Es 2", pos=Vector3.new(-1229, -856, 5580)}
+			
+        }
+    },
+	{
         name = "Elemental Island",
         spots = {
 			{name="Elemental Island", pos=Vector3.new(-665, 4, 5155)},
@@ -67,20 +81,7 @@ local MapsData = {
 			
         }
     },
-	{
-        name = "Throne Room",
-        spots = {
-			{name="Throne Room", pos=Vector3.new(-1240, -854, 5509)},
-			{name="Reroll Crafting", pos=Vector3.new(-1461, -839, 5628)},
-            {name="Spot Api 1", pos=Vector3.new(-1274, -856, 5535)},
-			{name="Spot Api 2", pos=Vector3.new(-1335, -856, 5550)},
-			{name="Spot Tempest 1", pos=Vector3.new(-1351, -856, 5612)},
-			{name="Spot Tempest 2", pos=Vector3.new(-1351, -856, 5612)},
-			{name="Spot Es 1", pos=Vector3.new(-1248, -856, 5641)},
-			{name="Spot Es 2", pos=Vector3.new(-1229, -856, 5580)}
-			
-        }
-    },
+	
 	{
         name = "Cooper Canyon",
         spots = {
@@ -121,6 +122,43 @@ local MapsData = {
 			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
 			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
+        }
+    },
+	{
+        name = "Ancient Jungle",
+        spots = {
+            {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
+			{name="Enchant Kuil", pos=Vector3.new(1482,127,-581)},
+            {name="Jual Ikan Jungle", pos=Vector3.new(1327,7,-207)},
+            {name="Beli Bamboo Rod", pos=Vector3.new(1572,-42,-644)},
+            {name="Beli Floral Bait", pos=Vector3.new(1380,-42,-620)},
+            {name="Kuil", pos=Vector3.new(1475,-22,-631)},
+            {name="Pintu Misi Element", pos=Vector3.new(1887,7,-578)},
+            {name="Papan Misi Element", pos=Vector3.new(2099,-92,-699)},
+            {name="kuil bawah", pos=Vector3.new(6053,-539,4403)},
+            {name="Jamur Ungu", pos=Vector3.new(1494,17,-351)},
+            {name="Jamur Merah", pos=Vector3.new(1517,15,-325)},
+            {name="Jamur Ijo", pos=Vector3.new(1482,11,-300)},
+            {name="Artefak Ijo", pos=Vector3.new(1380,6,109)},
+            {name="Artefak Ungu", pos=Vector3.new(1827,7,-287)},
+            {name="Artefak Merah", pos=Vector3.new(890,7,-358)},
+            {name="Artefak Kuning", pos=Vector3.new(1480,6,-852)},
+            {name="Spot King Jelly", pos=Vector3.new(1677,2,-674)},
+            {name="Spot Lubang 1", pos=Vector3.new(1412,4,-554)},
+            {name="Spot Lubang 2", pos=Vector3.new(1410,4,-588)},
+            {name="Spot Lubang 3", pos=Vector3.new(1404,4,-623)},
+            {name="Spot Maja 1", pos=Vector3.new(1471,-8,-579)},
+            {name="Spot Maja 2", pos=Vector3.new(1489,-18,-599)},
+            {name="Spot Maja 3", pos=Vector3.new(1468,-22,-623)},
+            {name="Spot Maja 4", pos=Vector3.new(1489,-18,-599)},
+            {name="Spot Maja 5", pos=Vector3.new(1465,-23,-668)},
+            {name="Spot Maja 1 Bawah", pos=Vector3.new(6043,-580,4567)},
+            {name="Spot Maja 2 Bawah", pos=Vector3.new(6059,-589,4599)},
+            {name="Spot Maja 3 Bawah", pos=Vector3.new(6046,-589,4609)},
+            {name="Spot Maja 4 Bawah", pos=Vector3.new(6001,-586,4663)},
+            {name="Spot Maja 5 Bawah", pos=Vector3.new(6097,-586,4663)},
+            {name="Spot Maja 6 Bawah", pos=Vector3.new(6044,-586,4715)},
+            {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
         }
     },
 {
@@ -252,43 +290,7 @@ local MapsData = {
 			
         }
     },
-	{
-        name = "Ancient Jungle",
-        spots = {
-            {name="Ancient Jungle", pos=Vector3.new(1282,2,-131)},
-			{name="Enchant Kuil", pos=Vector3.new(1482,127,-581)},
-            {name="Jual Ikan Jungle", pos=Vector3.new(1327,7,-207)},
-            {name="Beli Bamboo Rod", pos=Vector3.new(1572,-42,-644)},
-            {name="Beli Floral Bait", pos=Vector3.new(1380,-42,-620)},
-            {name="Kuil", pos=Vector3.new(1475,-22,-631)},
-            {name="Pintu Misi Element", pos=Vector3.new(1887,7,-578)},
-            {name="Papan Misi Element", pos=Vector3.new(2099,-92,-699)},
-            {name="kuil bawah", pos=Vector3.new(6053,-539,4403)},
-            {name="Jamur Ungu", pos=Vector3.new(1494,17,-351)},
-            {name="Jamur Merah", pos=Vector3.new(1517,15,-325)},
-            {name="Jamur Ijo", pos=Vector3.new(1482,11,-300)},
-            {name="Artefak Ijo", pos=Vector3.new(1380,6,109)},
-            {name="Artefak Ungu", pos=Vector3.new(1827,7,-287)},
-            {name="Artefak Merah", pos=Vector3.new(890,7,-358)},
-            {name="Artefak Kuning", pos=Vector3.new(1480,6,-852)},
-            {name="Spot King Jelly", pos=Vector3.new(1677,2,-674)},
-            {name="Spot Lubang 1", pos=Vector3.new(1412,4,-554)},
-            {name="Spot Lubang 2", pos=Vector3.new(1410,4,-588)},
-            {name="Spot Lubang 3", pos=Vector3.new(1404,4,-623)},
-            {name="Spot Maja 1", pos=Vector3.new(1471,-8,-579)},
-            {name="Spot Maja 2", pos=Vector3.new(1489,-18,-599)},
-            {name="Spot Maja 3", pos=Vector3.new(1468,-22,-623)},
-            {name="Spot Maja 4", pos=Vector3.new(1489,-18,-599)},
-            {name="Spot Maja 5", pos=Vector3.new(1465,-23,-668)},
-            {name="Spot Maja 1 Bawah", pos=Vector3.new(6043,-580,4567)},
-            {name="Spot Maja 2 Bawah", pos=Vector3.new(6059,-589,4599)},
-            {name="Spot Maja 3 Bawah", pos=Vector3.new(6046,-589,4609)},
-            {name="Spot Maja 4 Bawah", pos=Vector3.new(6001,-586,4663)},
-            {name="Spot Maja 5 Bawah", pos=Vector3.new(6097,-586,4663)},
-            {name="Spot Maja 6 Bawah", pos=Vector3.new(6044,-586,4715)},
-            {name="Spot Maja 7 Bawah", pos=Vector3.new(6030,-557,4564)} 
-        }
-    },
+	
     
     {
         name = "Corral Reff",
