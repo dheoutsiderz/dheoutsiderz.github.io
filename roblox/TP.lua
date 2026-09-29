@@ -52,6 +52,20 @@ local MapsData = {
         }
     },
 	{
+        name = "Invaders Reach",
+        spots = {
+            {name="Invaders Reach", pos=Vector3.new(1347, -964, 2904)},
+            {name="Live Machine", pos=Vector3.new(1262, -964, 3008)},
+			{name="NPC Bobert", pos=Vector3.new(1432, -964, 3009)},
+			{name="Spot 1", pos=Vector3.new(1366, 13, 3003)},
+			{name="Spot 2", pos=Vector3.new(1206, 13, 2937)},
+			{name="Spot 3", pos=Vector3.new(1495, 13, 2942)},
+			{name="Spot 4", pos=Vector3.new(1306, -962, 2941)},
+			{name="Spot 5", pos=Vector3.new(1397, -953, 2946)},
+			{name="Spot 6", pos=Vector3.new(1233, -964, 3088)},
+        }
+    },
+	{
         name = "Throne Room",
         spots = {
 			{name="Throne Room", pos=Vector3.new(-1240, -854, 5509)},
