@@ -185,7 +185,17 @@ local MapsData = {
             {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
             {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
             {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)},
+			
+        }
+    },
+	{
+        name = "Esoterik Grove",
+        spots = {
+            {name="Esoterik Grove", pos=Vector3.new(2105,-27,1356)},
+            {name="Spot Secret 1", pos=Vector3.new(2390, -1148, 1411)},
+
+			
         }
     },
 	    {
