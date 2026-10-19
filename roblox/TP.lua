@@ -41,6 +41,18 @@ local MapsData = {
         }
     },
 	{
+        name = "Hallowen Eve",
+        spots = {
+            {name="Hallowen Eve", pos=Vector3.new(456, 1894, -5675)},
+            {name="Pumpkin Island Tele", pos=Vector3.new(538, 1899, -5829)},
+			{name="Resurrection Machine", pos=Vector3.new(539, 1903, -5647)},
+			{name="Shop", pos=Vector3.new(648, 1903, -5571)},
+			{name="Jembatan 1", pos=Vector3.new(538, 1901, -5670)},
+			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)},
+        }
+    },
+	
+	{
         name = "Arcadia",
         spots = {
             {name="Arcadia", pos=Vector3.new(1338, 7, 2933)},
