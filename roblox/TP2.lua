@@ -173,8 +173,8 @@ local function createPlayerRow(p)
     local function getHRP(target) return target.Character and target.Character:FindFirstChild("HumanoidRootPart") end
     createBtn("F", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -2) end end)
     createBtn("B", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 2) end end)
-    createBtn("L", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(-2, 0, 0) end end)
-    createBtn("R", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(2, 0, 0) end end)
+    createBtn("L", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(-2.5, 0, 0) end end)
+    createBtn("R", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame * CFrame.new(2.5, 0, 0) end end)
     createBtn("0", Color3.fromRGB(255, 105, 180), function() if getHRP(p) then LocalPlayer.Character.HumanoidRootPart.CFrame = p.Character.HumanoidRootPart.CFrame end end)
     createBtn("SPY", Color3.fromRGB(70, 70, 70), function() if p.Character and p.Character:FindFirstChild("Humanoid") then workspace.CurrentCamera.CameraSubject = p.Character.Humanoid end end)
 end
