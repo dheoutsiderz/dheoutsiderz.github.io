@@ -55,32 +55,7 @@ local MapsData = {
 			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)},
         }
     },
-	
-	{
-        name = "Arcadia",
-        spots = {
-            {name="Arcadia", pos=Vector3.new(1338, 7, 2933)},
-            {name="NPC Dexter", pos=Vector3.new(1356, 13, 2952)},
-			{name="Sell & Charm", pos=Vector3.new(1483, 13, 2964)},
-			{name="Arcade PAss", pos=Vector3.new(1318, 13, 29985)},
-			{name="Pellet Machine", pos=Vector3.new(1323, 13, 2977)},
-			{name="Claim Reward", pos=Vector3.new(1210, 83, 3036)},
-        }
-    },
-	{
-        name = "Invaders Reach",
-        spots = {
-            {name="Invaders Reach", pos=Vector3.new(1347, -964, 2904)},
-            {name="Live Machine", pos=Vector3.new(1262, -964, 3008)},
-			{name="NPC Bobert", pos=Vector3.new(1432, -964, 3009)},
-			{name="Spot 1", pos=Vector3.new(1366, 13, 3003)},
-			{name="Spot 2", pos=Vector3.new(1206, 13, 2937)},
-			{name="Spot 3", pos=Vector3.new(1495, 13, 2942)},
-			{name="Spot 4", pos=Vector3.new(1306, -962, 2941)},
-			{name="Spot 5", pos=Vector3.new(1397, -953, 2946)},
-			{name="Spot 6", pos=Vector3.new(1233, -964, 3088)},
-        }
-    },
+
 	{
         name = "Throne Room",
         spots = {
@@ -113,32 +88,6 @@ local MapsData = {
     },
 	
 	{
-        name = "Cooper Canyon",
-        spots = {
-            {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
-            {name="NPC WR Stone ", pos=Vector3.new(-4270, 24, 717)},
-			{name="NPC Sell Fish", pos=Vector3.new(-4239, 21, 685)},
-			{name="NPC Clara PETS", pos=Vector3.new(-4288, 23, 652)},
-			{name="NPC Outlaws", pos=Vector3.new(-4123, 8, 423)},
-			{name="NPC Prospector", pos=Vector3.new(-4227, 60, 400)},
-			{name="Spot 1 atas", pos=Vector3.new(-4193, 60, 432)},
-			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
-        }
-    },
-	
-{
-        name = "Cooper Canyon Mines",
-        spots = {
-            {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
-            {name="NPC Nerveous", pos=Vector3.new(-4082, -548, 550)},
-			{name="NPC Null Crafting", pos=Vector3.new(-4057, -550, 476)},
-			{name="Atas Pengait", pos=Vector3.new(-4036, -520, 555)},
-			{name="Atas pengait", pos=Vector3.new(-4039, -539, 552)},
-			{name="Spot 1 WR", pos=Vector3.new(-4135, -555, 552)},
-			{name="Spot 2 WR", pos=Vector3.new(-4011, -548, 544)}
-        }
-    },
-	{
         name = "Underwater City",
         spots = {
 			{name="Underwater City", pos=Vector3.new(-3185, -637, -10243)},
@@ -153,6 +102,34 @@ local MapsData = {
 			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
 			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
 			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
+        }
+    },
+	
+	{
+        name = "Cooper Canyon",
+        spots = {
+            {name="Cooper Canyon", pos=Vector3.new(-4098, 4, 644)},
+            {name="NPC WR Stone ", pos=Vector3.new(-4270, 24, 717)},
+			{name="NPC Sell Fish", pos=Vector3.new(-4239, 21, 685)},
+			{name="NPC Clara PETS", pos=Vector3.new(-4288, 23, 652)},
+			{name="NPC Outlaws", pos=Vector3.new(-4123, 8, 423)},
+			{name="NPC Prospector", pos=Vector3.new(-4227, 60, 400)},
+			{name="Spot binary", pos=Vector3.new(-4188, 6, 642)},
+			{name="Spot 1 atas", pos=Vector3.new(-4193, 60, 432)},
+			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
+        }
+    },
+	{
+{
+        name = "Cooper Canyon Mines",
+        spots = {
+            {name="Cooper Canyon Mines", pos=Vector3.new(-4167, -555, 534)},
+            {name="NPC Nerveous", pos=Vector3.new(-4082, -548, 550)},
+			{name="NPC Null Crafting", pos=Vector3.new(-4057, -550, 476)},
+			{name="Atas Pengait", pos=Vector3.new(-4036, -520, 555)},
+			{name="Atas pengait", pos=Vector3.new(-4039, -539, 552)},
+			{name="Spot 1 WR", pos=Vector3.new(-4135, -555, 552)},
+			{name="Spot 2 WR", pos=Vector3.new(-4011, -548, 544)}
         }
     },
 	{
