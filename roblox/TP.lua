@@ -52,7 +52,7 @@ local MapsData = {
 			{name="Jembatan 1", pos=Vector3.new(538, 1901, -5670)},
 			{name="Jembatan 2", pos=Vector3.new(571, 1901, -5605)},
 			{name="Jembatan 3", pos=Vector3.new(501, 1901, -5608)},
-			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)},
+			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)}
         }
     },
 
@@ -82,7 +82,7 @@ local MapsData = {
 			{name="NPC Fire Machine (ignis)", pos=Vector3.new(-618, 107, 5492)},
 			{name="NPC Cold Machine (boreas)", pos=Vector3.new(-1095, 124, 5542)},
 			{name="NPC Lightning Machine (Tempest)", pos=Vector3.new(-916, 85, 5560)},
-			{name="Pintu Masuk Throne Room", pos=Vector3.new(-840, 115, 5722)},
+			{name="Pintu Masuk Throne Room", pos=Vector3.new(-840, 115, 5722)}
 			
         }
     },
@@ -101,7 +101,7 @@ local MapsData = {
 			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
 			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
 			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
-			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
+			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)}
         }
     },
 	
@@ -177,7 +177,7 @@ local MapsData = {
             {name="Spot 2 Eso", pos=Vector3.new(3256,-1302,1409)},
             {name="Spot 3 Eso", pos=Vector3.new(3300,-1303,1371)},
             {name="Spot 4 Eso", pos=Vector3.new(3250,-1294,1435)},
-            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)},
+            {name="Spot 5 Eso", pos=Vector3.new(3211,-1303,1408)}
 			
         }
     },
@@ -185,7 +185,7 @@ local MapsData = {
         name = "Esoterik Grove",
         spots = {
             {name="Esoterik Grove", pos=Vector3.new(2105,-27,1356)},
-            {name="Spot Secret 1", pos=Vector3.new(2390, -1148, 1411)},
+            {name="Spot Secret 1", pos=Vector3.new(2390, -1148, 1411)}
 
 			
         }
@@ -208,7 +208,7 @@ local MapsData = {
             {name="Cursed Kraken 1 (PC)", pos=Vector3.new(5639,-879,15396)},
             {name="Cursed Kraken 2 (PC)", pos=Vector3.new(5685,-896,15327)},
             {name="Cristalized 1", pos=Vector3.new(5830,-896,15346)},
-			{name="Cursed Kraken", pos=Vector3.new(5614, -904, 15344)},
+			{name="Cursed Kraken", pos=Vector3.new(5614, -904, 15344)}
         }
     },
 	{
@@ -281,7 +281,7 @@ local MapsData = {
 			{name="Samping Pipa 2", pos=Vector3.new(-3071, -640, -10445)},
 			{name="Spot Jendela", pos=Vector3.new(-3351, -639, -10734)},
 			{name="Spot Bawah Pohon", pos=Vector3.new(-3372, -637, -10547)},
-			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)},
+			{name="Pipa Lorong", pos=Vector3.new(-3148, -649, -10552)}
         }
     },
 	{
@@ -291,7 +291,7 @@ local MapsData = {
             {name="Charm RDA", pos=Vector3.new(-1459, -1042, -10482)},
 			{name="Posisi Tengah", pos=Vector3.new(-1443, -1042, -10447)},
 			{name="Depan Charm", pos=Vector3.new(-1472, -1042, -10475)},
-			{name="Pagar Lubang Air", pos=Vector3.new(-1496, -1042, -10450)},
+			{name="Pagar Lubang Air", pos=Vector3.new(-1496, -1042, -10450)}
 			
         }
     },
@@ -303,7 +303,7 @@ local MapsData = {
 			{name="Spot Kanan", pos=Vector3.new(2072, 0, -36)},
 			{name="Spot Dpn Jungle", pos=Vector3.new(2013, 1, 3)},
 			{name="Dpn Jungle", pos=Vector3.new(1786, 0, -12)},
-			{name="Spot ThunderZIlla", pos=Vector3.new(2015, 8, -1)},
+			{name="Spot ThunderZIlla", pos=Vector3.new(2015, 8, -1)}
 			
         }
     },
@@ -342,7 +342,7 @@ local MapsData = {
             {name="Selle Ikan", pos=Vector3.new(49,17,2868)},
             {name="Buy hazmat / totem", pos=Vector3.new(-137,3,2767)},
             {name="Spot Orca 1", pos=Vector3.new(202,3,2802)},
-			{name="Spot Orca 2", pos=Vector3.new(-80, 3, 2878)},
+			{name="Spot Orca 2", pos=Vector3.new(-80, 3, 2878)}
         }
     },
     {
@@ -460,7 +460,7 @@ local MapsData = {
 			{name="CP 08", pos=Vector3.new(669, 1328, -9163)},
 			{name="CP 09", pos=Vector3.new(985, 1756, -10378)},
 			{name="CP 10", pos=Vector3.new(1333, 2076, -11407)},
-			{name="Summit", pos=Vector3.new(671, 2481, -12277)},
+			{name="Summit", pos=Vector3.new(671, 2481, -12277)}
         }
     },
 }
