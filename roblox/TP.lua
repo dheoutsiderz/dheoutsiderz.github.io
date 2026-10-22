@@ -119,7 +119,6 @@ local MapsData = {
 			{name="Spot 1 bawah", pos=Vector3.new(-4147, 7, 616)}
         }
     },
-	{
 {
         name = "Cooper Canyon Mines",
         spots = {
