@@ -52,7 +52,8 @@ local MapsData = {
 			{name="Jembatan 1", pos=Vector3.new(538, 1901, -5670)},
 			{name="Jembatan 2", pos=Vector3.new(571, 1901, -5605)},
 			{name="Jembatan 3", pos=Vector3.new(501, 1901, -5608)},
-			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)}
+			{name="Spot Meyra", pos=Vector3.new(411, 1898, -5647)},
+			{name="Spot FG2", pos=Vector3.new(553, 1900, -5769)}
         }
     },
 
