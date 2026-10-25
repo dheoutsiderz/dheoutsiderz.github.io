@@ -63,6 +63,7 @@ local MapsData = {
             {name="The Forgotten Graveyard", pos=Vector3.new(509, 1923, -5283)},
 			{name="NPC Eldritch", pos=Vector3.new(570, 1963, -5046)},
 			{name="Hallowen Couldrown", pos=Vector3.new(494, 1923, -5284)},
+			{name="Spot Soulveil Koil", pos=Vector3.new(509, 1930, -5153)},
 			{name="Graveyard 1", pos=Vector3.new(594, 1924, -5277)},
 			{name="Graveyard 2345", pos=Vector3.new(451, 1924, -5215)},
 			{name="Graveyard 6", pos=Vector3.new(428, 1931, -5149)},
