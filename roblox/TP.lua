@@ -56,7 +56,19 @@ local MapsData = {
 			{name="Spot FG2", pos=Vector3.new(553, 1900, -5769)}
         }
     },
-
+{
+        name = "The Forgotten Graveyard",
+        spots = {
+            {name="NPC Ferryman", pos=Vector3.new(544, 1916, -5432)},
+            {name="The Forgotten Graveyard", pos=Vector3.new(509, 1923, -5283)},
+			{name="NPC Eldritch", pos=Vector3.new(570, 1963, -5046)},
+			{name="Hallowen Couldrown", pos=Vector3.new(494, 1923, -5284)},
+			{name="Graveyard 1", pos=Vector3.new(594, 1924, -5277)},
+			{name="Graveyard 2345", pos=Vector3.new(451, 1924, -5215)},
+			{name="Graveyard 6", pos=Vector3.new(428, 1931, -5149)},
+			{name="Graveyard 7", pos=Vector3.new(502, 1957, -5058)}
+        }
+    },
 	{
         name = "Throne Room",
         spots = {
