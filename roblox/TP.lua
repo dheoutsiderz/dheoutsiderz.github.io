@@ -64,7 +64,12 @@ local MapsData = {
 			{name="NPC Eldritch", pos=Vector3.new(570, 1963, -5046)},
 			{name="Hallowen Couldrown", pos=Vector3.new(494, 1923, -5284)},
 			{name="Spot Soulveil Koil", pos=Vector3.new(509, 1930, -5153)},
-			{name="Spot Hiu", pos=Vector3.new(549, 1927, -5208)}
+			{name="Spot Hiu", pos=Vector3.new(549, 1927, -5208)},
+			{name="Spot FG", pos=Vector3.new(614, 1914, -5161)},
+			{name="Tottem 1", pos=Vector3.new(598, 1914, -5122)},
+			{name="Tottem 2", pos=Vector3.new(517, 1921, -5176)},
+			{name="Tottem 3", pos=Vector3.new(614, 1914, -5161)},
+			
         }
     },
 	{
