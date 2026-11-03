@@ -77,6 +77,7 @@ local MapsData = {
         spots = {
 			{name="Throne Room", pos=Vector3.new(-1240, -854, 5509)},
 			{name="Reroll Crafting", pos=Vector3.new(-1461, -839, 5628)},
+			{name="Spot Tengah", pos=Vector3.new(-1290, -856, 5594)},
             {name="Spot Api 1", pos=Vector3.new(-1274, -856, 5535)},
 			{name="Spot Api 2", pos=Vector3.new(-1335, -856, 5550)},
 			{name="Spot Tempest 1", pos=Vector3.new(-1351, -856, 5612)},
