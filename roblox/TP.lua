@@ -488,7 +488,7 @@ local MapsData = {
 -----------------------------------------------------------
 local openBtn = Instance.new("TextButton", sg)
 openBtn.Size = UDim2.fromOffset(45, 45); 
-openBtn.Position = UDim2.new(0, 10, 0.5, 60); 
+openBtn.Position = UDim2.new(0, 10, 0.5, 100); 
 openBtn.BackgroundColor3 = Color3.fromRGB(60, 0, 0); 
 openBtn.Text = "TP"; openBtn.TextColor3 = Color3.new(1, 1, 1); 
 openBtn.Font = "GothamBlack"; openBtn.TextSize = 30; 
