@@ -41,6 +41,20 @@ local MapsData = {
         }
     },
 	{
+        name = "Higwind Isle",
+        spots = {
+            {name="Masuk Ke Highwind Isle", pos=Vector3.new(-1026, 85, 3997)},
+            {name="Higwind Isle", pos=Vector3.new(536, 1894, -5860)},
+			{name="Sell Ikan", pos=Vector3.new(627, 1899, -5749)},
+			{name="NPC HArbour Master", pos=Vector3.new(643, 1899, -5560)},
+			{name="NPC Sky Cartographer", pos=Vector3.new(748, 1889, -5793)},
+			{name="Steamforg Workshop", pos=Vector3.new(171, 1914, -5626)},
+			{name="Spot FG SC", pos=Vector3.new(448, 1894, -5674)},
+			
+			
+        }
+    },
+	{
         name = "Hallowen Eve",
         spots = {
             {name="Hallowen Eve", pos=Vector3.new(456, 1894, -5675)},
