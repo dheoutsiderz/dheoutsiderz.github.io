@@ -49,6 +49,7 @@ local MapsData = {
 			{name="NPC HArbour Master", pos=Vector3.new(643, 1899, -5560)},
 			{name="NPC Sky Cartographer", pos=Vector3.new(748, 1889, -5793)},
 			{name="Steamforg Workshop", pos=Vector3.new(171, 1914, -5626)},
+			{name="Air Ship", pos=Vector3.new(798, 1887, -5843)},
 			{name="Spot FG SC", pos=Vector3.new(448, 1894, -5674)},
 			
 			
