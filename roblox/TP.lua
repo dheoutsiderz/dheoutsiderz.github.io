@@ -51,7 +51,7 @@ local MapsData = {
 			{name="Steamforg Workshop", pos=Vector3.new(171, 1914, -5626)},
 			{name="Air Ship", pos=Vector3.new(798, 1887, -5843)},
 			{name="Spot FG SC 1", pos=Vector3.new(448, 1894, -5674)},
-			{name="Spot FG SC 2", pos=Vector3.new(4777, 1887, -5822)},
+			{name="Spot FG SC 2", pos=Vector3.new(777, 1887, -5822)},
 			
 			
         }
